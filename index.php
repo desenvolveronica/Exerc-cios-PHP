@@ -44,6 +44,17 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="modulo vermelho">
+                    <h3>Tipos</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=int">
+                                Olá PHP
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </main>
