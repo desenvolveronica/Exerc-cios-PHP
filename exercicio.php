@@ -26,7 +26,7 @@
         </div>
     </main>
     <footer class="rodape">
-        COD3R & ALUNOS © <?= date('Y'); ?>
+        desenvolveronica © <?= date('Y'); ?>
     </footer>
 </body>
 </html>
