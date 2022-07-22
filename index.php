@@ -50,7 +50,7 @@
                     <ul>
                         <li>
                             <a href="exercicio.php?dir=tipos&file=int">
-                                Olá PHP
+                                Inteiros
                             </a>
                         </li>
                     </ul>
@@ -59,7 +59,7 @@
         </div>
     </main>
     <footer class="rodape">
-        COD3R & ALUNOS © <?= date('Y'); ?>
+        desenvolveronica © <?= date('Y'); ?>
     </footer>
 </body>
 </html>
