@@ -79,6 +79,17 @@
                                Desafio String
                             </a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=boleano">
+                               Tipo Boleano
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=conversoes">
+                               Conversões
+                            </a>
+                            
+                        </li>
                     </ul>
                 </div>
             </nav>

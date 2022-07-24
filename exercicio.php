@@ -22,7 +22,7 @@
             <?php
                 include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
             ?>
-            <?php echo ('Esta parte está vindo de exercício'); ?>
+            <?php echo '<br>' . ('Esta parte está vindo de exercício'); ?>
         </div>
     </main>
     <footer class="rodape">
