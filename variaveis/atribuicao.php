@@ -44,3 +44,11 @@ echo $numero . '<br>';
 $numero **= 4;
 echo $numero . '<br>';
 
+// setando DEFAULT  | VALOR PARA QUANDO A VARIÁVEL ESTÁ INDISPONÍVEL
+
+// echo $variavelA = 'texto variavel A  <br>';
+var_dump($variavelA);
+echo '<br>';
+echo $valor = $variavelA ?? 'valor default' . '<br>'; //neste caso como a variavelA não existe ele usa o 'valor default'
+
+
