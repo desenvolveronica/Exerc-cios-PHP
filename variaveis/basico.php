@@ -16,6 +16,7 @@ if(isset($soma)){
     echo 'Não está setado <br>';
 };
 
-var_dump($soma) . '<br>';
+var_dump($soma);
+echo '<br>';
 
 var_dump($_SERVER["HTTP_HOST"]) . '<br>';
