@@ -46,7 +46,7 @@ $resultado = false;
 if($t1 AND $t2){
      $tv ='50"';
 }
-if($t1 OR $t2){
+if($t1 XOR $t2){
     $tv ='32"';
 }
 
