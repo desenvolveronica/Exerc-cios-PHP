@@ -4,7 +4,7 @@
 
 echo '<p class="divisao">Estrutura Switch </p> <hr>';
 
-$categoria = 'Luxo';
+$categoria = 'LUXO';
 switch(strtolower($categoria)){
     case 'luxo':
         $preço = 250000;
