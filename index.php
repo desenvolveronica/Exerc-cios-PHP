@@ -55,7 +55,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=controle&file=desafio_switch">
+                            <a href="exercicio.php?dir=controle&file=desafio_switch copy">
                                Desafio Switch
                             </a>
                         </li>
