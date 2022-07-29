@@ -29,6 +29,11 @@
                             Mapa
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=array&file=desafio_index">
+                            Desafio Índex
+                        </a>
+                    </li>
                 </ul>
             </div>
 
