@@ -10,4 +10,12 @@ echo '<br>';
 define('CIDADES', array('BH', 'RE'));
 print_r(CIDADES);
 echo "<br>";
-echo '<h3>QUANDO O ARRAY É DECLARADO POR UMA CONST NADA NELE MUDA</h3>';
+echo '<h3 info>QUANDO O ARRAY É DECLARADO POR UMA CONST NADA NELE MUDA</h3>';
+echo '<h4 info>$_GET e $_POST  = SÃO ARRAYs</h4>';
+?>
+<style>
+          [info]{
+                    display: flex;
+                    justify-content: center;
+          }
+</style>
