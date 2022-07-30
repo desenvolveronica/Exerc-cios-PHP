@@ -54,6 +54,11 @@
                             Multidimensionais
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=array&file=multi_2">
+                            Multidimensionais 2
+                        </a>
+                    </li>
                 </ul>
             </div>
 
