@@ -59,6 +59,11 @@
                             Multidimensionais 2
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=array&file=constantes_array">
+                           Arrays Constantes
+                        </a>
+                    </li>
                 </ul>
             </div>
 
