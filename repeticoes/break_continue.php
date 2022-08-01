@@ -22,10 +22,18 @@ for(;;){
                     continue; //neste caso ele passsa para a PRÓXIMA LINHA
           };
           echo "$cont <br>";
-          if($cont < 25){
-                    echo "$cont <br>";
+          if($cont >= 26){
                     break;
                     echo 'tentei';
+          }{
+                    echo "$cont <br>";
           };
 
 };
+
+echo '<p>Foreach com Array</p><hr>';
+foreach(array(1,2,3,4,5) as $valor){
+          if($valor === 5) break;
+          if($valor %2 === 0) continue;
+          echo "$valor <br>";
+}
