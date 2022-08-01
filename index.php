@@ -30,6 +30,11 @@
                             Desafio Laço For
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=repeticoes&file=foreach">
+                            ForEach
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo laranja">
