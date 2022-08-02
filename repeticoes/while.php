@@ -28,7 +28,7 @@ echo '<hr>';
 echo '<p>USANDO FOR</p>';
 $contador = 0;
 for(; $contador < VALOR_LIMITE ; ){
-          echo "while $contador <br>";
+          echo "For $contador <br>";
           $contador++;        
 
 }  //no fim do laço nao usa ; => somente no DO WHILE
