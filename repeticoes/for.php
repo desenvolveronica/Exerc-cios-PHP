@@ -16,7 +16,7 @@ echo $cont . '<br> <hr>';
 for(; $cont <=15 ;){
           echo "$cont  <br>";
           $cont++;
-};
+}
 
 $array = [ 1 => 'Domingo','Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
 echo '<br>Percorrendo ARRAY<br><hr>';
@@ -25,7 +25,7 @@ echo '<br>';
 for($i = 0; $i < count($array) ; $i ++ ){
           echo "{$array[$i]} <br>";
 
-};
+}
 echo '<br>Percorrendo MATRIX<br><hr>';
 $matrix = [
           ['a', 'e', 'i', 'o', 'u'],
@@ -38,11 +38,11 @@ echo '<br><hr>';
 for($i = 0; $i < count($matrix); $i++){
           print_r($matrix[$i]) ;
           echo'<br>';
-};
+}
 echo '<br>For dentro do outro para percorrer a MATRIX<br><hr>';       
 for($i = 0; $i < count($matrix); $i++){
           for($j = 0; $j < count($matrix[$i]); $j ++){
                     echo "{$matrix[$i][$j]}  ";
           };
           echo '<br>';
-};
+}
