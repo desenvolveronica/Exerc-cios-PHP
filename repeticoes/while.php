@@ -18,6 +18,16 @@ do { echo "while $contador <br>";
           $contador++;
 } while($contador < VALOR_LIMITE);
 
+echo '<p>Outro exemplo DO WHILE</p>';
+
+$contador = 0;
+do {
+          echo "do-while $contador <br>";
+          $contador++;
+} while($contador < VALOR_LIMITE);
+
+echo '<hr>';
+
 echo '<p>OBSERVAÇÃO</p><hr>';
 echo '<p>Quando estamos usando o WHILE, se a condição já começa como falsa ele não executa nenhuma vez o laço while.</p>';
 echo '<p>Quando usamos DO WHILE, mesmo que a condição já comece como falsa o laço será executado ao menos 1X.</p>';
