@@ -15,7 +15,38 @@ foreach($array as $linha){
 
 
 }//não usa (;) no foreach
+echo '<p>Quando temos uma MATRIX ou ARRAY é acertivo usar um FOREACH DENTRO  do outro</p>';
+
 ?>
+<table>
+          <?php
+                    foreach($array as $linha){
+                              echo '<tr>';
+                              foreach($linha as $valor){
+                                        echo "<td>$valor</td>";
+
+                              }echo '</tr>';
+                    }
+    
+          ?>
+</table>
+<br>
+   
+<table>
+          <?php
+
+                    foreach($array as $indice => $linha){
+                           $style = $indice %2 === 1 ? 'background-color: lightblue;' : '';
+                           echo "<tr style = '{$style}'>";
+                           foreach($linha as $valor){
+                              echo "<td>$valor</td>";
+
+                           }echo '</tr>';
+                    }
+          ?>
+</table>   
+
+
 <style>
           table {
                     border: solid 1px #444;
@@ -27,5 +58,7 @@ foreach($array as $linha){
           }
           table td {
                     padding: 10px 20px;
+                    
+                    
           }
 </style>
