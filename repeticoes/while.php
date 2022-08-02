@@ -23,3 +23,12 @@ echo '<p>Quando estamos usando o WHILE, se a condição já começa como falsa e
 echo '<p>Quando usamos DO WHILE, mesmo que a condição já comece como falsa o laço será executado ao menos 1X.</p>';
 echo '<p>DO WHILE é a unica estrutura de controle que que a expressão fica depois do bloco </p>';
 echo '<p>DO WHILE É A ÚNICA ESTRUTURA DE CONTROLE QUE TERMINA COM (;)</p>';
+echo '<hr>';
+
+echo '<p>USANDO FOR</p>';
+$contador = 0;
+for(; $contador < VALOR_LIMITE ; ){
+          echo "while $contador <br>";
+          $contador++;        
+
+}  //no fim do laço nao usa ; => somente no DO WHILE
