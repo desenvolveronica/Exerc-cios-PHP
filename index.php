@@ -21,7 +21,7 @@
                 <h3>6. Repetições</h3>
                 <ul>
                     <li>
-                        <a href="exercicio.php?dir=repeticoes&file=for">
+                        <a href="exercicio.php?dir=repeticoes_treino&file=for">
                             Laço For
                         </a>
                     </li>
