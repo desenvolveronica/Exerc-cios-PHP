@@ -14,3 +14,7 @@ for($cont = 1 ; $cont <= 5; $cont++){
           $impressao .= '#';
           echo $impressao .'<br>';
 }
+
+echo '<br>';
+
+for($impressao = '#'; $impressao != '######'; $impressao .= '#') echo $impressao . '<br>';
