@@ -3,21 +3,38 @@
 <form action="#" method="post">
    <div>
       <label for="linhas">Linhas</label>
-      <input type="number" name="linhas" id="linhas" value="10">
+      <input style = "widTH: 100px" type="number" name="linhas" id="linhas" value=<?= $_POST['linhas'] ?? 5 ?>   > 
+      
    </div>
    <div>
       <label for="colunas">Colunas</label>
-      <input type="number" name="colunas" id="colunas" value="10">
+      <input style = "width: 100px" type="number" name="colunas" id="colunas" value=<?=  $_POST['colunas'] ?? 5 ?>    >
    </div>
-      <button>Gerar Tabela</button>
+      <button style ='background-color: lightgreen'>Gerar Tabela</button>
 </form>
 
-<?php
 
+<table>
+   <?php
 
+      $num = 1;
+      $linhas = intval($_POST['linhas']); 
+      $colunas = intval($_POST['colunas']);
 
+      if(!$linhas) $linhas = 5;
+      if(!$colunas) $colunas = 5;
 
-?>
+      for( $i = 0 ; $i < $linhas; $i++){
+         $style = $i %2 === 0 ? $style = "background-color: pink" : "background-color: lightblue  ";
+         echo "<tr style = '{$style}'>";
+         for( $j = 0 ; $j < $colunas; $j++){
+            echo "<td>$num</td>";
+            $num++;
+         }
+         echo '</tr>';
+      };
+   ?>
+</table>
 
 <style>
 
