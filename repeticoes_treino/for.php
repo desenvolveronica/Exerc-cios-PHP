@@ -49,3 +49,10 @@ for($i = 0; $i < count($matrix); $i++){
           }echo '<br>';
 }
 
+echo "<br>";
+
+$carros =['Uno', 'Corsa', 'Palio'];
+for($i=0; $i < count($carros); $i++){
+          echo "$carros[$i] <br>";
+}
+echo '<hr>';
