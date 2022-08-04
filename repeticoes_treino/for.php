@@ -56,3 +56,14 @@ for($i=0; $i < count($carros); $i++){
           echo "$carros[$i] <br>";
 }
 echo '<hr>';
+
+$cores = [
+          ['Verde', 'Vermelho', 'Vinho'],
+          ['Azul', 'Amarelo']
+];
+
+for($i = 0; $i < count($cores); $i++){
+          for($j = 0; $j < count($cores[$i]); $j++){
+                    echo "{$cores[$i][$j]} ";
+          }echo "<br>";
+}
