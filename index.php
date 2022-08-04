@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=repeticoes&file=foreach">
+                        <a href="exercicio.php?dir=repeticoes_treino&file=foreach">
                             ForEach
                         </a>
                     </li>
