@@ -24,3 +24,9 @@ $chamada = obtemMensagemComNome('Verônica');
 echo "$chamada <br>";
 $chamada2 = obtemMensagemComNome('Diva');
 echo "$chamada2 <br>";
+echo "<hr>";
+
+function soma($a, $b){
+          return $a + $b;
+}
+echo soma(5, 10) . "<br>";
