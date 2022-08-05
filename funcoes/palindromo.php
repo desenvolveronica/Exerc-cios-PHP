@@ -30,4 +30,12 @@ echo palindromo('bola') . "<br>";
 echo palindromo('teste') . "<br>";
 echo palindromo('oco') . "<br>";
 
-echo strlen('teste'); //strlen => 5 e ele tem 4 índices
+echo strlen('teste'). "<br>"; //strlen => 5 e ele tem 4 índices
+echo "<br> Outra forma <hr>";
+
+function palindromoSimples($palavra){
+          if($palavra === strrev($palavra))
+          {echo "sim esta palavra é um palindromo";} else{echo "Não esta palavra não é um palindromo";}
+          
+}
+echo (palindromoSimples('arara'));
