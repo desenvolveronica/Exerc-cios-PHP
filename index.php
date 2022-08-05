@@ -25,6 +25,11 @@
                             Funções
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=funcoes&file=args_retorno">
+                            Argumentos e retorno
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo verde-escuro">
