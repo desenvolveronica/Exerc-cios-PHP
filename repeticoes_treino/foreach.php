@@ -69,3 +69,15 @@ for($i = 1; $i <= count($numeros); $i++ ){
           echo "$numeros[$i] ";
      
 }
+echo "<hr>";
+
+$carros =['Uno', 'Corsa', 'Palio'];
+
+foreach($carros as $indice){
+          echo "$indice ";
+} 
+
+$cores = [
+          ['Verde', 'Vermelho', 'Vinho'],
+          ['Azul', 'Amarelo']
+];
