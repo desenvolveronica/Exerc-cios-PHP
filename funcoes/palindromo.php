@@ -38,4 +38,10 @@ function palindromoSimples($palavra){
           {echo "sim esta palavra é um palindromo";} else{echo "Não esta palavra não é um palindromo";}
           
 }
-echo (palindromoSimples('arara'));
+echo (palindromoSimples('arara')). "<br>";
+echo "<br><hr>";
+function palindromoSimplesParte2($palavra){
+         return $palavra === strrev($palavra) ? "Sim" : "Não"; //sem o return a função NÃO mostra nada
+ 
+}
+echo (palindromoSimplesParte2('arara')). "<br>";
