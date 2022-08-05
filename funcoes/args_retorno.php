@@ -29,4 +29,27 @@ echo "<hr>";
 function soma($a, $b){
           return $a + $b;
 }
-echo soma(5, 10) . "<br>";
+echo soma(5, 10) . "<br><br>";
+echo "Colocando os parâmetros como variáveis <hr>";
+$x = 10;
+$y = 20;
+echo soma($x, $y) . '<br>';
+
+function trocaValor($a, $novoValor){
+          $a = $novoValor;
+          echo "<br5> $a <br>";
+}
+$variavel = 1;
+trocaValor($variavel, 28); // neste ponto o $a vale 28 pq o $novoValor vale 28 também
+echo "Valor da variável foi declarado como 1, mas foi SUPRIMIDO detro do trocaValor($variavel, 28) <br>";
+echo "Fora do trocaValor() a variável vale: $variavel <br>";
+
+echo "<br>Forma de passar a referência e não o valor & <hr>";
+function trocaValorDeVerdade(&$a, $novoValor){
+          $a = $novoValor;
+          echo "variável vale dentro da função {$a} <br>";
+}
+trocaValorDeVerdade($variavel, 5000);
+echo "Isso acontece pq com o & acessamos o ENDEREÇO DE MEMÓRIA <br>";
+echo "A variável vale fora da função {$variavel} <br>";
+
