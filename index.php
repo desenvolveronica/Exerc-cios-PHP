@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=repeticoes&file=while">
+                        <a href="exercicio.php?dir=repeticoes_treino&file=while">
                            While/Do While
                         </a>
                     </li>
