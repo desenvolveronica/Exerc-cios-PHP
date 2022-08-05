@@ -77,7 +77,15 @@ foreach($carros as $indice){
           echo "$indice ";
 } 
 
+echo "<hr>";
+
 $cores = [
           ['Verde', 'Vermelho', 'Vinho'],
           ['Azul', 'Amarelo']
 ];
+
+foreach($cores as $indice){
+          foreach($indice as $valor){
+                    echo "$valor ";
+          }echo "<br>";
+}
