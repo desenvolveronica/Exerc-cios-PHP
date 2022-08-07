@@ -18,5 +18,16 @@ function somaDeVerdade(...$numeros){  //os ... significam que vai converter o qu
 echo somaDeVerdade(4,5,10, 11) . " => Usamos um foreach para obter o resultado que é a soma de uma Array<br>";
 echo "Utilizando um Array <br>";
 $array = [6, 7, 8];
-echo(somaDeVerdade(...$array)). " => Importante ressaltar que é necessário passar o ...$array para desmenbrar o array<br>"; 
-
+echo(somaDeVerdade(...$array)). " => Importante ressaltar que é necessário passar o ...$array para desmenbrar o array<br><br>"; 
+echo "Usando parâmetros normais com parâmettros variáveis <br><hr>";
+function membros($titular, ...$dependentes){  //necessário ressltar que o argumentos variável precisa vir por ÚLTIMO
+          echo "Titular " . $titular . "<br>";
+          if($dependentes){
+                    echo "Dependentes: ";
+                    foreach($dependentes as $dep){
+                              echo " $dep  " ;
+                    }
+          } else {echo "Sem dependentes <br>"; }
+}
+echo membros("Verônca", "Tita", "Diva") . "<br><br>";
+echo membros("Diva") . "<br>";
