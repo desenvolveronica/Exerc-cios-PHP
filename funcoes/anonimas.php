@@ -14,14 +14,20 @@ $soma = function($a, $b){
 echo $soma1(1,2) . "<br><br>";
 echo "Função recebendo outra como parâmetro <br><hr>";
 function executar($a, $b, $op, $function){
-          $resultado = $function($a, $b);
+          $resultado = $function($a, $b) ?? 'Nada';  //usando valor default com ?? 
           echo "$a $op $b = $resultado <br>";
 }
 
 executar(2, 3, '+', $soma);
-echo "<br> ";
 $multiplicacao = function($a, $b){
-          echo "$a * $b = ";
+          // echo "$a * $b = ";
           return $a * $b;
 };
 echo $multiplicacao(4, 5);
+echo "<br> Outra forma <br>";
+executar(4, 5, '*', $multiplicacao);
+echo "<br> ";
+$divisao = function($a, $b){
+          // return $a / $b; se não tiver retorno pode ser colocado um valor default na função que chama ela ou seja: executar
+};
+executar(2, 3, '/', $divisao);
