@@ -21,6 +21,11 @@
                 <h3>7. Funções</h3>
                 <ul>
                     <li>
+                        <a href="exercicio.php?dir=funcoes&file=anonimas">
+                            Funções Anônimas
+                        </a>
+                    </li>
+                    <li>
                         <a href="exercicio.php?dir=funcoes&file=escopo">
                             Funções
                         </a>
