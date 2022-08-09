@@ -21,7 +21,7 @@
                 <h3>7. Funções</h3>
                 <ul>
                     <li>
-                        <a href="exercicio.php?dir=funcoes&file=anonimas">
+                        <a href="exercicio.php?dir=funcoes&file=anonimas copy">
                             Funções Anônimas
                         </a>
                     </li>
