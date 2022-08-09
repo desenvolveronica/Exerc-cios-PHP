@@ -8,7 +8,14 @@ $soma = function($a, $b){
 
 function executar($a, $b, $op, $funcao){
           $resultado = $funcao($a, $b);
-          echo "<span>Somando $a $op $b = $resultado</span>";
+          echo "<span>Resultado $a $op $b = $resultado</span>";
 }
 
 executar(5,6,'+', $soma);
+echo "<br>";
+
+$multiplicar = function($a , $b){
+          return $a * $b;
+};
+
+executar(10, 6, '*' , $multiplicar);
