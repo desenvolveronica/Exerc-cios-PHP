@@ -19,3 +19,22 @@ $soma2 = function($a, $b){
 echo $soma2(2,3) ."<br>"; 
 echo (is_callable($soma2)? 'Sim, soma é um callable': 'Não, desta forma soma não é um callable'). "<br>";
 
+var_dump($soma); 
+echo "<br> <br>CLOSURE é uma classe que envolve a função <br><hr>";
+
+echo "Função recebendo outra como parâmetro <br><hr>";
+function executar($a, $b, $op, $function){
+          $resultado = $function($a, $b) ?? 'Nada';  //usando valor default com ?? 
+          echo "$a $op $b = $resultado <br>";
+}
+executar(1,2,'+', $soma);
+echo (is_callable($soma)? 'Sim, soma é um callable': 'Não, desta forma soma não é um callable'). "<br><br>";
+
+function executar2($a, $b, $op, callable $function){ //como se estivesse tipando a função que está no parâmetro
+          $resultado = $function($a, $b) ?? 'Nada';  //usando valor default com ?? 
+          echo "$a $op $b = $resultado <br>";
+}
+executar2(1,2,'+', $soma);
+echo (is_callable($soma)? 'Sim, soma é um callable conforme tipagem': 'Não, desta forma soma não é um callable'). "<br>";
+
+
