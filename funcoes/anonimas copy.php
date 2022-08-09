@@ -2,8 +2,13 @@
 
 <?php
 $soma = function($a, $b){
-          echo "<span>Somando $a + $b = </span>";
           return $a + $b;
-};
+};  // termina com ; pois temos uma sentença de código
 
-echo $soma(4, 5) ."<br>";
+
+function executar($a, $b, $op, $funcao){
+          $resultado = $funcao($a, $b);
+          echo "<span>Somando $a $op $b = $resultado</span>";
+}
+
+executar(5,6,'+', $soma);
