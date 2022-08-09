@@ -28,6 +28,6 @@ echo "<br> Outra forma <br>";
 executar(4, 5, '*', $multiplicacao);
 echo "<br> ";
 $divisao = function($a, $b){
-          // return $a / $b; se não tiver retorno pode ser colocado um valor default na função que chama ela ou seja: executar
+          return $a / $b; //se não tiver retorno pode ser colocado um valor default na função que chama ela ou seja: executar
 };
 executar(2, 3, '/', $divisao);

@@ -7,7 +7,7 @@ $soma = function($a, $b){
 
 
 function executar($a, $b, $op, $funcao){
-          $resultado = $funcao($a, $b);
+          $resultado = $funcao($a, $b) ?? 'nada';
           echo "<span>Resultado $a $op $b = $resultado</span>";
 }
 
@@ -19,3 +19,13 @@ $multiplicar = function($a , $b){
 };
 
 executar(10, 6, '*' , $multiplicar);
+
+echo "<br>";
+$divisao = function($a, $b){
+          //return $a / $b; //se não tiver retorno pode ser colocado um valor default na função que chama ela ou seja: executar
+};
+executar(2, '3', '/', $divisao);
+echo "<br>";
+
+echo 10 < 7 ? 'sim': 'nao';
+
