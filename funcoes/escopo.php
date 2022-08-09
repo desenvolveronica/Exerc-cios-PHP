@@ -32,3 +32,4 @@ echo "Mesmo fora da função o valor da variável é : {$variavel} / ISSO PQ FOI
 echo "<hr>";
 echo "=> Resultado do var_dump em uma função que nao tem retorno" .var_dump(trocaValorDeVerdade());  //a função é chamada novamente e executa o código
 //o resultado do var_dump é NULL pois esta função não retorna NADA
+

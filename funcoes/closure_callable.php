@@ -1,7 +1,8 @@
 <div class="titulo">Closure & Callable</div>
 
 <?php
-echo "Callable pode ser chamado <br>";
+echo "Callable pode ser chamado (funçaõ tradicional ou mesmo função anônima)<br>";
+echo "CLOSURE é uma classe usada para representsr uma função anônima <br>";
 $soma = function($a, $b){
           return $a + $b;
 };
