@@ -20,11 +20,16 @@
             <div class="modulo vermelho-escuro">
                 <h3>7. Funções</h3>
                 <ul>
+                <li>
+                        <a href="exercicio.php?dir=funcoes&file=fatorial_recursivo">
+                            Fatorial Recursivo
+                        </a>
+                    </li>
                     <li>
                         <a href="exercicio.php?dir=funcoes&file=closure_callable">
                             Closure & Callable
                         </a>
-                    </li>
+                    </li>   
                     <li>
                         <a href="exercicio.php?dir=funcoes&file=anonimas copy">
                             Funções Anônimas
