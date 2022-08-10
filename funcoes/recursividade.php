@@ -13,7 +13,7 @@ echo somaUmAte(7) . "<br>";
 
 function outraSomaUmAte($numero){
           $soma = 0;
-          for($i = 1; $i <= $numero; $i++){  //neste caso não declara a variável inicial visto que a mesma virá da chamada da function
+          for($i = 0; $i <= $numero; $i++){ 
                     $soma += $i;
           }
           return $soma;
