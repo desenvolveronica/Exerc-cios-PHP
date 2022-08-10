@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <a href="exercicio.php?dir=function&file=recursividade">
-                            Desafio Fatorial
+                            Recursividade
                         </a>
                     </li>
                 </ul>
