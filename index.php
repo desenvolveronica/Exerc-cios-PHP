@@ -24,6 +24,11 @@
                             Desafio Fatorial
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=function&file=recursividade">
+                            Desafio Fatorial
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo vermelho-escuro">
