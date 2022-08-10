@@ -20,3 +20,12 @@ function outraSomaUmAte($numero){
 }
 
 echo outraSomaUmAte(7) . "<br>";
+
+echo "Função recursiva consiste em ter um PONTO DE PARADA e da mesma função sendo quebrada EM PROBLEMAS MENORES <br>";
+function somaRecursivaUmAte($numero){
+          //condição de parada
+          if($numero === 1){
+                    return 1;
+          } return $numero + somaRecursivaUmAte($numero - 1);
+}
+echo somaRecursivaUmAte(7);
