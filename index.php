@@ -15,8 +15,17 @@
     </header>
     <main class="principal">
         <div class="conteudo">
-
             <nav class="modulos">
+            <div class="modulo vermelho">
+                <h3>7. Funções</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=function&file=fatorial">
+                            Desafio Fatorial
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="modulo vermelho-escuro">
                 <h3>7. Funções</h3>
                 <ul>
