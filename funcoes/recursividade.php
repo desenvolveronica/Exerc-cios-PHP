@@ -28,4 +28,9 @@ function somaRecursivaUmAte($numero){
                     return 1;
           } return $numero + somaRecursivaUmAte($numero - 1);
 }
-echo somaRecursivaUmAte(7);
+echo somaRecursivaUmAte(7) . "<br>";
+
+function somaRecursivaEconomica($numero){
+          return $numero === 1 ? 1 : $numero + somaRecursivaEconomica($numero - 1);
+}
+echo somaRecursivaEconomica(7) . "<br>";
