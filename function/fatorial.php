@@ -9,3 +9,14 @@ function fatorial($numero){
 }
 
 echo fatorial(7) . "<br>";
+
+
+echo "Fatorial Recursivo <br>";
+function novaSoma($numero){
+
+          for($i = 0; $i <= $numero; $i++){
+                    return $valor = $numero += novaSoma($numero - 1);
+          } return $valor; 
+}
+
+echo novaSoma(7);
