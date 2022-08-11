@@ -20,3 +20,13 @@ function novaSoma($numero){
 }
 
 echo novaSoma(7);
+echo "<hr>";
+
+echo "Novo Fatorial <br>";
+
+function novoFatorial($numero){
+          if($numero === 1) return 1;       
+          return $numero *= novoFatorial($numero - 1);
+}
+
+echo "Fatorial de 5 = " . novoFatorial(5);
