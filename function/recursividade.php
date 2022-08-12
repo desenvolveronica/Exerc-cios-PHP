@@ -29,7 +29,7 @@ echo somaRecursiva(7);
 echo "<hr>";
 echo "**Exemplo 2 <br>";
 
-$soma = function($a, $b){
+$soma = function($a, $b){  //variável atribuida a uma função anônima
           return $a + $b;
 };
 
