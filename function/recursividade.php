@@ -61,5 +61,15 @@ function outraSoma($numero){
           }return $valor;
 }
 echo outraSoma(7);
+echo "<hr>";
+echo "Mais outra <br>";
 
+function maisOutra($numero){
+          $valor = 0;
+          for($i = 0; $i <= $numero; $i++){
+                    $valor += $i; }
 
+                   return $valor;
+}
+
+echo maisOutra(7) . "<br>";
