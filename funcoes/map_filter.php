@@ -25,6 +25,13 @@ foreach($notas as $nota){
 }
 print_r($apenasAprovados);
 echo "<br>";
+echo "Filtrando usando FILTER <br>";
 
+function aprovados($nota){
+        return $nota >= 7;  //critério de filtro onde vai procurar por quem for TRUE nessa condição
+}
 
+$apenasAprovados2 = array_filter($notas, 'aprovados');  //diferente do MAP primeiro passsa o ARRAY
 
+print_r($apenasAprovados2);
+echo "<br>";
