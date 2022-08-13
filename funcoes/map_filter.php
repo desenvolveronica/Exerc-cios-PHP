@@ -13,5 +13,18 @@ print_r($notasFinais1);
 echo "<br>";
 echo "<br>Conversão com MAP <br>";
 
-$notasFinais2 = array_map('round', $notas);
+$notasFinais2 = array_map('round', $notas); //espera 2 argumentos dentro de array_map
 print_r($notasFinais2);
+echo "<br><br><hr>";
+echo "Filtrando com FOREACH <br>";
+
+foreach($notas as $nota){
+          if($nota >= 7){
+                    $apenasAprovados[] = $nota;
+          }
+}
+print_r($apenasAprovados);
+echo "<br>";
+
+
+
