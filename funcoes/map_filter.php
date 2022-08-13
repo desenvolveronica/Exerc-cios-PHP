@@ -34,4 +34,14 @@ function aprovados($nota){
 $apenasAprovados2 = array_filter($notas, 'aprovados');  //diferente do MAP primeiro passsa o ARRAY
 
 print_r($apenasAprovados2);
-echo "<br>";
+echo "<br><br><hr>";
+echo "Filtrando com FOREACH <br>";
+
+function calculoLegal($nota){
+          $notaFinal = round($nota) + 3;
+          return $notaFinal > 10 ? 10 : $notaFinal;
+}
+
+
+$apenasAprovados3 = array_map('calculoLegal', $notas );
+print_r($apenasAprovados3);
