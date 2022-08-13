@@ -56,7 +56,7 @@ echo "<hr>";
 echo "Mais Uma Forma de Fazer <br>";
 function outraSoma($numero){
           $valor = 0;
-          for($i = $numero; $i >= 1; $i --){  //neste caso não tem a variável com o valor de início pois o valor pode ser qualquer um
+          for($i = $numero; $i >= 1; $i --){  //neste caso pode não tem a variável com o valor de início pois o valor pode ser qualquer um
                     $valor += $i;
           }return $valor;
 }
