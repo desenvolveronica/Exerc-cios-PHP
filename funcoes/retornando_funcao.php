@@ -12,3 +12,10 @@ function soma($a){
 
 echo soma(3)(3) . "<br>";   //como soma retorna uma outra função, passamos o parâmetro desta outra função $b => VALOR DE $b
 //a prior será exibido o valor de $b visto que $a AINDA NAO ESTÁ DISPONÍVEL
+
+$doisMais = soma(2); //passado 2 para o primeiro argumento $a
+/*observação: Avariável é criada pq se eu passo o parâmetro para soma novamente ele será para $a e vai gerar erro 
+visto que não tem valor de $b
+*/
+echo $doisMais(10) . "<br>"; //quando chama a variável é passado o argumento para o que falta, neste caso o $b
+echo $doisMais(1) . "<br>"; //sempre alterando o valor de $b
