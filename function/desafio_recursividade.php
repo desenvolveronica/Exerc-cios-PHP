@@ -17,3 +17,6 @@ imprimir($array);
 echo "<br>";
 
 //imprimir($elemento, $nivel . $nivel[0]) => pega o nível ATUAL e concatena com o PRIMEIRO por isso [0]
+
+imprimir($array, '#'); //neste caso o $nivel NÃO usa o DEFAULT
+echo "<br>";
