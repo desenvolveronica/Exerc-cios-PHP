@@ -16,26 +16,6 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-            <div class="modulo vermelho">
-                <h3>7. Funções</h3>
-                <ul>
-                    <li>
-                        <a href="exercicio.php?dir=function&file=fatorial">
-                            Desafio Fatorial
-                        </a>
-                    </li>
-                    <li>
-                        <a href="exercicio.php?dir=function&file=recursividade">
-                            Recursividade
-                        </a>    
-                    </li>
-                    <li>
-                        <a href="exercicio.php?dir=function&file=desafio_recursividade">
-                            Desafio Recursividade
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="modulo vermelho-escuro">
                 <h3>7. Funções</h3>
                 <ul>
@@ -386,6 +366,26 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modulo vermelho">
+                <h3>1.0 Treinamento</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=function&file=fatorial">
+                            Desafio Fatorial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=function&file=recursividade">
+                            Recursividade
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=function&file=desafio_recursividade">
+                            Desafio Recursividade
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
             </nav>
         </div>
