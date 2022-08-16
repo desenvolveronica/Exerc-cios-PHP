@@ -32,4 +32,6 @@ $c2 -> idade = 27;
 $c2-> apresentar('Verônica', 28);
 echo "<br>";
 
-
+echo "<br> Como foi inserido no método ($nome, $idade) para cada chamada ele pede para passar um valor para esses atributos <br>";
+echo "SOLUÇÃO: <br>";
+echo "Não passar nada na criação do MÉTODO ou seja:   public function apresentar(){}...";
