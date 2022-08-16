@@ -22,7 +22,7 @@ class NovaData {
           public $ano = 1970;
 
           public function DiaMesAno(){
-                    return $this->dia;
+                    return "{$this->dia}/{$this->mes}/{$this->ano}<br>" ;
           }
 }
 
