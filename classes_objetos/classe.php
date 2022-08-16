@@ -1,1 +1,1 @@
-<div class="titulo">Classe</div>
+<div class="titulo">Primeira Classe</div>

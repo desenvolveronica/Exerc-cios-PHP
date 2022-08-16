@@ -21,7 +21,7 @@
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=classes_objetos&file=classe">
-                            Classe
+                            Primeira Classe
                         </a>
                     </li>
                 </ul>
