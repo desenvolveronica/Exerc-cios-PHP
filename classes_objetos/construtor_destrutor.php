@@ -11,14 +11,14 @@ class Pessoa {
           function __construct() //indicar quais os parâmetros quer receber no momento que chamar o NEW
           //podemos passar um valor PADRÃO para os parâmetros SE QUISER
           {
-                 echo "Constructor invocado! <br>"; 
+                 echo "Constructor invocado em Pessoa! <br>"; 
                  $this->nome = 'Diva'; //this apontando para $nome RECEBE o valor de $novoNome  
                  $this->idade = 29; //$this apontando parA $idade recebe o valor de $idade
           }
 
           function __destruct() //ELE NÃO RECEBE NENHUM PARÂMETRO
           {
-                    echo "Destructor CHAMADO! <br>";
+                    echo "Destructor CHAMADO! em PESSOA <br>";
           }
 
           public function apresentar(){
@@ -32,4 +32,31 @@ echo "2- Neste caso o constructor está SETANDO os valores e como ele aponta par
 
 $people = new Pessoa();
 echo $people ->apresentar();     
-echo "<br>Segunda forma :<br>";
+echo "<br><br>Segunda forma :<br>";
+
+class cliente {
+          public $nome;
+          public $idade;
+
+          function __construct($novoNome, $idade = 18) // Opcional passar os parâmetros
+          {
+                   $this->nome = $novoNome; //neste ponto estou vinculando o parâmetro do constructor com o da classe
+                   $this->idade = $idade;
+                   echo "Constructor chamado novamente (cliente)<br>";
+          }
+
+          function __destruct() //ele não recebe parâmetros
+          {
+                   echo "Destructor chamado  em CLENTE! <br>"; 
+          }
+
+          public function chamada($novoNome, $idadex){
+                    return "Nome: $novoNome , Idade: $idadex <br>";
+          }
+
+
+}
+$cliente = new Cliente('Verônica'); //quando chama o NEW ele acessa o constructor
+//O constructor pede os PARÂMETROS 
+//não pediu o de $idade pois já está setado
+echo $cliente -> chamada("Verônica", 29);
