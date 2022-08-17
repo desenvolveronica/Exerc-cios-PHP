@@ -2,7 +2,7 @@
 
 <?php
 echo "Quando chamamos o NEW estamos CHAMANDO a função contruct <br>";
-echo "Primeira forma :<br>";
+echo "**Primeira forma :<br>";
 class Pessoa {
           //ATRIBUTOS
           public $nome;
@@ -31,9 +31,9 @@ echo "1- Estanciar a classe com NEW criando uma variável <br>";
 echo "2- Neste caso o constructor está SETANDO os valores e como ele aponta para this em tela aparece os valores do constructor <br><br>";
 
 $people = new Pessoa();
-echo $people ->apresentar();     
-echo "<br><br>Segunda forma :<br>";
+echo $people -> apresentar(); 
 
+echo "<br><br>**Segunda forma :<br>";
 class cliente {
           public $nome;
           public $idade;
@@ -59,4 +59,36 @@ class cliente {
 $cliente = new Cliente('Verônica'); //quando chama o NEW ele acessa o constructor
 //O constructor pede os PARÂMETROS 
 //não pediu o de $idade pois já está setado
-echo $cliente -> chamada("Verônica", 29);
+echo $cliente -> chamada("Verônica", 29) . "<br>";
+
+echo "**Terceira forma :<br>";
+
+class Humano {
+          public $nome;
+          public $idade;
+
+          function __construct($outroNome, $outraIdade = 18)
+          {
+                    $this->nome = $outroNome;
+                    $this->idade = $outraIdade;
+                    echo "Construct Humano <br>";
+          }
+
+          function __destruct()
+          {
+                    echo "Destruct Humano <br>";
+          }
+
+          public function humaninho(){
+                    return " {$this->nome} com {$this->idade} anos <br>";
+          }
+}
+
+$maninho = new Humano('Trafônica', 29);  //precisa colocar os parênteses junto com argumentos pois tem o constructor
+//Estanciado o Humano com o OBJETO MANINHO
+//MANINHO pode acessar o método de HUMANO
+
+echo $maninho -> humaninho();
+
+echo "Chamando o destructor com unset() ou setando com null => o endereço é liberado na memória <br>";
+unset($pessoa);
