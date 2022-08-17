@@ -8,7 +8,7 @@ class Data {
           public $ano; 
 
           public function DiaMesAno($dia, $mes, $ano){
-                    echo  " $dia/$mes/$ano <br>";
+                    echo  " $dia/$mes/$ano <br>";  //return faz uma resposta similar ao echo 
           }
 
 }
