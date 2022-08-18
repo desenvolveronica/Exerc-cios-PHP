@@ -404,6 +404,11 @@
                             Desafio Recursividade
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=function&file=construtor_destrutor_pratica">
+                            Construtor & Destrutor Prática
+                        </a>
+                    </li>
                 </ul>
             </div>
 
