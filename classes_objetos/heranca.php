@@ -92,7 +92,6 @@ class Usuario13 extends Pessoa13{
                     
           }
 }
-echo "uuuuuuuuuuuu";
 $user13 = new Usuario13('Trafônica', 30, 'Nove@lesca');
 echo "<br>";
 $user13 -> apresentar13();
