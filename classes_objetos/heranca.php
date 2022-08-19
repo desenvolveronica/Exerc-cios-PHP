@@ -32,10 +32,13 @@ echo "<br> ";
 echo "<br> ";
 echo "<br> ";
 echo "<hr>";
-echo "Herança com EXTENDS";
+echo "**Herança com EXTENDS";
 echo "<br> ";
-echo "Quando passamos uma classe com EXTENDS de outra estamos usando o conceito de herança";
-echo "Neste caso a nova classe herda atributos e métodos da classe mãe";
+echo "<br> ";
+echo "Quando passamos uma classe com EXTENDS de outra estamos usando o conceito de herança <br>";
+echo "Neste caso a nova classe herda atributos e métodos da classe mãe <br>";
+
+
 class Usuario extends Pessoa13{
 
 }
