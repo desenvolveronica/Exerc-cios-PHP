@@ -9,10 +9,17 @@ class A {
           private $private = "Privado";
 
           public function mostrarA(){
-                    echo "a) Público: {$this->publico} <br>";
-                    echo "b) Protegido: {$this->protegido} <br>";
-                    echo "c) Privado: {$this->private} <br>";
 
+                    $this->naoMostrar(); //o this mostra que é uma função do OBJETO
+
+                    echo "<br> class A =>  Atributo Público: {$this->publico} <br>";
+                    echo "class A =>  Atributo Protegido: {$this->protegido} <br>";
+                    echo "class A =>  Atributo Privado: {$this->private} <br>";
+
+          }
+
+          private function naoMostrar(){
+                    echo "Sou uma função privada";
           }
 }
 
@@ -24,4 +31,10 @@ echo "<hr>";
 echo "<br>";
 
 $subA = new A;
+echo "<strong>Function pública chamando uma function PRIVATE com o THIS<br></strong>";
+echo "<br>";
 $subA -> mostrarA();
+echo "<br>";
+echo "<br>";
+echo "Uma função <strong>PRIVATE</strong> só é mostrada a partir de uma outra função (pública) no escopo da CLASSE <br>";
+echo "Ou seja, mesmo instanciando NÃO é possível chamar esta função direto<br>";
