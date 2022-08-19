@@ -28,3 +28,14 @@ class Pessoa13 {
 $essoa = new Pessoa13('Tuti', 13); //estes valores são usados se na função estiver chamando o THIS
 echo $essoa -> apresentarOutro('Tata', 31); //esses valores são usados se na função tiver somente a variável
 echo "Passando aqui";
+echo "<br> ";
+echo "<br> ";
+echo "<br> ";
+echo "<hr>";
+echo "Herança com EXTENDS";
+echo "<br> ";
+echo "Quando passamos uma classe com EXTENDS de outra estamos usando o conceito de herança";
+echo "Neste caso a nova classe herda atributos e métodos da classe mãe";
+class Usuario extends Pessoa13{
+
+}
