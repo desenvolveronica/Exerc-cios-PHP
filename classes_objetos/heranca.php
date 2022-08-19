@@ -68,3 +68,28 @@ echo "<br> ******ATENÇÃO <br>";
 echo "<br> Usuário tem acesso a função da classe PAI <br>";
 $usuario -> apresentarOutro('Trafônica' ,30); //nesta função pede nome e idade
 echo "<br><hr>";
+echo "<br>";
+
+echo "Usando function da classe pai usando PARENT:: <br>";
+
+class Usuario13 extends Pessoa13{
+          public $login;
+
+          function __construct($nome, $idade, $login)
+          {
+                   $this->nome = $nome;
+                   $this->idade = $idade;
+                   $this->login = $login; 
+                   echo "Usuário instanciado <br>";
+          }
+
+          public function apresentar13(){
+                    echo "{$this->login}: ";
+                    echo parent :: apresentarOutro('Trafônica' ,30); //na função apresentarOutro PRECISA de NOME e IDADE
+                    
+          }
+}
+echo "uuuuuuuuuuuu";
+$user13 = new Usuario13('Trafônica', 30, 'Nove@lesca');
+echo "<br>";
+$user13 -> apresentar13();
