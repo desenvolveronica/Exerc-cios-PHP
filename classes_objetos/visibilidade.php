@@ -38,3 +38,22 @@ echo "<br>";
 echo "<br>";
 echo "Uma função <strong>PRIVATE</strong> só é mostrada a partir de uma outra função (pública) no escopo da CLASSE <br>";
 echo "Ou seja, mesmo instanciando NÃO é possível chamar esta função direto<br>";
+echo "<br>";
+echo "<hr>";
+echo "<br>";
+
+
+class B extends A {
+
+
+          public function mostrarB(){
+                    echo "Classe B) Público: {$this->publico} <br>";
+
+          }
+}
+
+$subB = new B;
+$subB -> mostrarB();
+echo "<br>";
+Echo "Como a classe B é uma filha da classe A, ela tem acesso a todos os métodos e parâmetros";
+$subB -> mostrarA();
