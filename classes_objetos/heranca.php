@@ -77,8 +77,11 @@ class Usuario13 extends Pessoa13{
 
           function __construct($nome, $idade, $login)
           {
-                   $this->nome = $nome;
-                   $this->idade = $idade;
+                    parent:: __construct($nome, $idade); //como a processo foi feito no construtor do pai ele pode ser aproveitado e fica igual
+
+                    // OUTRA FORMA
+          //          $this->nome = $nome;
+          //          $this->idade = $idade;
                    $this->login = $login; 
                    echo "Usuário instanciado <br>";
           }
