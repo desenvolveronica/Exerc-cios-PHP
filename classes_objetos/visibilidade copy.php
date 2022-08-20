@@ -38,4 +38,31 @@ echo "Para poder acessar uma funçaõ PRIVATE ou PROTECTED é preciso que as mes
 echo "<br>Para acessar qualquer propriedade interno da classe é preciso INSTANCIAR a mesma e chamar o THIS <br>";
 echo "<br>";
 
+echo "Herança: <br>";
+echo "<br>";
+
+
+class B extends A {
+
+          public function mostraB(){
+                    echo "Variável interna de A sendo usada por B Pública : {$this->public} <br>";
+                    echo "Variável interna de A sendo usada por B Protected : {$this->protected} <br>";
+                    echo "Variável interna de A sendo usada por B Private : {$this->private} <br>";
+          }
+
+
+
+
+}
+
+echo "Um filho que foi criado com extends do pai pode acessar os métodos do mesmo <br>";
+$subB = new B;
+echo "FILHO B acessando o mostraA() do PAI <br><br>";
+$subB->mostraA();
+echo "<br>***O filho consegue acessar TUDO da funçaõ PÚBLICA do pai<br>";
+echo "<br>";
+
+$subB->mostraB();
+echo "<br>";
 echo "Cheguei aqui";
+
