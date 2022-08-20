@@ -14,6 +14,7 @@ class A {
 
                     $this->protegida();
                     $this->privada();
+                    echo "<br>";
                     echo "Variável interna de A Pública : {$this->public} <br>";
                     echo "Variável interna de A Protected : {$this->protected} <br>";
                     echo "Variável interna de A Private : {$this->private} <br>";
@@ -32,3 +33,9 @@ $subA = new A;
 echo "<br>***Função interna da classe: mostraA()<br><br>";
 $subA -> mostraA();
 echo "<br>";
+echo "Para poder acessar uma funçaõ PRIVATE ou PROTECTED é preciso que as mesmas sejam chamadas em uma função PUBLICA dentro da propria classe ";
+
+echo "<br>Para acessar qualquer propriedade interno da classe é preciso INSTANCIAR a mesma e chamar o THIS <br>";
+echo "<br>";
+
+echo "Cheguei aqui";
