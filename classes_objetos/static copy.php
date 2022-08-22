@@ -18,6 +18,12 @@ class Tester{
 
           }
 
+          public static function mostarStaticTester(){
+                    echo "<br>";
+                    echo "Variável estática: " . self::$membroStatico ."<br>";
+
+          }
+
 }
 echo "<strong>THIS representa a instância atual </strong><br>";
 echo "<br>Ex:1 <br>" . Tester::$membroStatico ."<br>"; //neste caso SELF não funciona pois não estou no escopo da classe
@@ -29,6 +35,16 @@ $tester = new Tester;
 echo 'EX:2 ' ,  $tester->mostraTester();
 echo "obs: Para chamar uma função pública e dinâmica é preciso instanciar uma objeto para tal <br>";
 
+echo "<br>";
+echo '<br> EX:3 ' ,  $tester->mostarStaticTester();
+echo "Acessando uma função estática diretamente de uma INSTÂNCIA <br>";
+echo "Em uma function STATIC, ou seja, para uso de classe NÃO é possível acessar um membro dinâmico, ou seja, para objeto<br>";
+
+
+echo "<br>";
+echo '<br> EX:4 ' ,  Tester::mostarStaticTester();
+echo "Acessando uma função estática diretamente da CLASSE <br>";
+echo "Como não estamos neste ponto dentro do escopo da classe É crucial chama-la, ou seja, Tester:: function estatic";
 
 
 
@@ -36,3 +52,4 @@ echo "obs: Para chamar uma função pública e dinâmica é preciso instanciar u
 
 echo "<br><br>";
 echo "Cheguei aqui <br>";
+
