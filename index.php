@@ -21,7 +21,7 @@
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=classes_objetos&file=static">
-                            Membro Estático
+                            Membros Estáticos
                         </a>
                     </li>
                     <li>

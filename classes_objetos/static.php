@@ -1,3 +1,3 @@
-<div class="titulo">Membro Estático</div>
+<div class="titulo">Membros Estáticos</div>
 
 <?php
