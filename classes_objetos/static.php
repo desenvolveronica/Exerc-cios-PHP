@@ -19,12 +19,14 @@ class A {
           public function mostraA(){
                     echo "<br>*Acessando variável não estática: {$this->naoEstatica}<br>";
                     echo "***Acessando variável STÁTICA (variável da classe)<br>";
-                    echo "Variável estática: " . self::$statica . "<br>";
+                    echo "Variável estática:" . self::$statica . "<br>";
+                    
           }
 
           public static function mostraStaticA(){
                     echo "Esta é uma função STATIC <br>";
                     echo "Membro Estático = " . self::$statica ."<br>";
+                    
           }
 
 
