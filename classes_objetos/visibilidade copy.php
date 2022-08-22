@@ -64,5 +64,5 @@ echo "<br>";
 
 $subB->mostraB();
 echo "<br>";
-echo "Cheguei aqui";
+echo "Cheguei aqui  <br>";
 
