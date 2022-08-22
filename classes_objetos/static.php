@@ -49,5 +49,10 @@ echo "<br>";
 echo "Chamando diretamente o membro que pertence a classe A PARTIR DELA MESMA <br>";
 echo "***" . A::$statica ."<br>";
 
+
 echo "<br><br>";
+echo "É possível alterar um membro de classe normalmente: <br>";
+A::$statica = "Membro STATIC alterado";
+echo A::$statica . "<br>";
+echo "<br>";
 echo "Cheguei aqui <br>";
