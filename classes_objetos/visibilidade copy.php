@@ -21,7 +21,7 @@ class A {
           }
 
           protected function protegida(){
-                    echo "Esta é uma função PROTEGIDA <br>";
+                    echo "Esta é uma função PROTEGIDA que pode ser passada por herança<br>";
           }
 
           private function privada(){
@@ -45,9 +45,15 @@ echo "<br>";
 class B extends A {
 
           public function mostraB(){
+
+                    parent::protegida();
+                    echo "<br>";
+
                     echo "Variável interna de A sendo usada por B Pública : {$this->public} <br>";
                     echo "Variável interna de A sendo usada por B Protected : {$this->protected} <br>";
+                    echo "***Um atributo protegido existe justamente para ser transmitido de herança <br>";
                     echo "Variável interna de A sendo usada por B Private : {$this->private} <br>";
+                    echo "***Um atributo privado é RESTRITO a classe a qual foi definido.Não é transmitido por herança<br>";
           }
 
 
@@ -61,7 +67,6 @@ echo "FILHO B acessando o mostraA() do PAI <br><br>";
 $subB->mostraA();
 echo "<br>***O filho consegue acessar TUDO da funçaõ PÚBLICA do pai<br>";
 echo "<br>";
-
 $subB->mostraB();
 echo "<br>";
 echo "Cheguei aqui  <br>";
