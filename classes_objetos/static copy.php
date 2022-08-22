@@ -44,8 +44,21 @@ echo "Em uma function STATIC, ou seja, para uso de classe NÃO é possível aces
 echo "<br>";
 echo '<br> EX:4 ' ,  Tester::mostarStaticTester();
 echo "Acessando uma função estática diretamente da CLASSE <br>";
-echo "Como não estamos neste ponto dentro do escopo da classe É crucial chama-la, ou seja, Tester:: function estatic";
+echo "Como não estamos neste ponto dentro do escopo da classe É crucial chama-la, ou seja, Tester:: function estatic <br>";
 
+
+echo "<br>";
+echo '<br> EX:5 ' ,  Tester::$membroStatico;
+echo "<br> Acessando variável estática que pode ser feito diretamente da CLASSE <br>";
+echo "Chamamos a classe e passamos :: mais o nome da variável com o $  <br>";
+echo "NÃO conseguimos chamar diretamente o membro dinâmico visto que o mesmo é da INSTÂNCIA <br>";
+
+
+echo "<br>";
+echo '<br> EX:6 ' ,  Tester::$membroStatico = 'Novo Valor para o membro estático';
+echo "Resultado de nova atribuição ao valor do membro estático<br>";
+echo "Obviamente esta nova atribuição só pode ser feita a partir da própria classe <br>";
+echo "Resultado: " , Tester::$membroStatico;
 
 
 
