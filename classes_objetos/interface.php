@@ -69,3 +69,12 @@ $tuti -> respirar();
 echo $tuti -> nova() , "<br>";
 echo "<strong>UMA CLASSE SÓ PODE EXTENDER (EXTENDS) APENAS PARA UMA OUTRA CLASSE ***MAS PODE IMPLEMENTAR (IMPLEMENTS) MÚLTIPLAS INTERFACES</strong> <br>";
 echo "<strong>JÁ UMA INTERFACE PODE EXTENDER (EXTENDS) MÚLTIPLAS INTERFACES </strong> <br>";
+echo "<br><hr>";
+
+echo "O fato de voce ter uma INTERFACE significa que você também tem uma HERANÇA <br>";
+
+var_dump($tuti instanceof Tuti);
+echo "<br>";
+var_dump($tuti instanceof Tester);
+echo "<br>";
+var_dump($tuti instanceof Nova);
