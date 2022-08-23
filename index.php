@@ -21,7 +21,7 @@
                 <ul>
                     <li>
                         <a href="exercicio.php?dir=classes_objetos&file=classe_abstrata">
-                            Classe Abstrata
+                            Classe Abstrata info
                         </a>
                     </li>
                     <li>
