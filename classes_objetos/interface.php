@@ -40,12 +40,19 @@ echo "<br><hr>";
 
 echo "<strong>UMA INTERFACE PODE ESTENDER (EXTENDS) OUTRA INTERFACE</strong><br>";
 
+interface Nova {
+          function nova() : string;
+}
 
-interface Tester extends Animal {
+interface Tester extends Animal, Nova {
           function tester();
 }
 
 class Tuti implements Tester{
+          function nova() : string{
+                    return "Nova classe";
+          }
+
           function tester() : string{
                     return "Function tester";
           }
@@ -54,7 +61,11 @@ class Tuti implements Tester{
           }
 }
 
+
 //instanciar class Tuti 
 $tuti = new Tuti;
 echo $tuti -> tester() , "<br>";
 $tuti -> respirar();
+echo $tuti -> nova() , "<br>";
+echo "<strong>UMA CLASSE SÓ PODE EXTENDER (EXTENDS) APENAS PARA UMA OUTRA CLASSE ***MAS PODE IMPLEMENTAR (IMPLEMENTS) MÚLTIPLAS INTERFACES</strong> <br>";
+echo "<strong>JÁ UMA INTERFACE PODE EXTENDER (EXTENDS) MÚLTIPLAS INTERFACES </strong> <br>";
