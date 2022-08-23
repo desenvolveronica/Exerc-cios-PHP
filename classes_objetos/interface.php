@@ -32,4 +32,29 @@ class Cachorro implements Animal, Canino {
 $dog = new Cachorro;
 $dog -> respirar();
 echo $dog -> agir();
-       
+echo "<br>";
+echo "OBS: Uma classe pode impementar <strong>MULTIPLAS</strong> interfaces <br>";
+echo "Interfaces por padrão possuem <strong>MÉTODOS PÚBLICOS</strong> <br>";
+echo "Não podemos definir um método <strong>PRIVATE</strong> ou <strong>PROTECTED</strong> em uma INTERFACE <br>";
+echo "<br><hr>";
+
+echo "<strong>UMA INTERFACE PODE ESTENDER (EXTENDS) OUTRA INTERFACE</strong><br>";
+
+
+interface Tester extends Animal {
+          function tester();
+}
+
+class Tuti implements Tester{
+          function tester() : string{
+                    return "Function tester";
+          }
+          function respirar() {
+                    echo "Respirar vindo de Testes que extends Animal <br>";
+          }
+}
+
+//instanciar class Tuti 
+$tuti = new Tuti;
+echo $tuti -> tester() , "<br>";
+$tuti -> respirar();
