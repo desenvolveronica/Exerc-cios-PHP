@@ -63,6 +63,8 @@ echo "Resultado: " , Tester::$membroStatico;
 
 
 
+
 echo "<br><br>";
 echo "Cheguei aqui <br>";
+
 
