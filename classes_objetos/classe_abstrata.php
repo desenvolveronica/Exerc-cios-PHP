@@ -1,4 +1,4 @@
-<div class="titulo">Classe Abstrata</div>
+<div class="titulo">Classe Abstrata INFO</div>
 
 <?php
 echo "Uma classe abstrata (ABSTRACT) <strong>PODE TER </strong> métodos abstratos ou concretos<br>";
