@@ -6,7 +6,7 @@ echo "Como uma classe abstrata não pode ser instanciada o seu único propósito
 
 abstract class Abstrata {
           // criando métodos abstratos
-          //caracter´stica de uma método abstrato é não ter corpo sendo somente assinatura
+          //característica de uma método abstrato é não ter corpo sendo somente assinatura
           abstract public function metodo1();
 
           //método protected é transmitido por herança
@@ -20,7 +20,7 @@ abstract class FilhaAbstrata extends Abstrata {
           //Ao implementar uma método abstrato é necessário rtirar este marcador (abstract)
 
           public function metodo1(){
-                    echo "Executando método 1. Este está vindo da classe FilhaAbstrata<br>";
+                    echo "Executando método 1. Este está herdando da classe Abstrata e puxado para a classe filhaAbstrata<br>";
           }
 
           abstract public function metodo3();
@@ -47,7 +47,8 @@ class Mae extends FilhaAbstrata {
                     echo "{$parametro}: Sem usar o THIS acessa a propriedade informada na chamada do método<br>";
           }
           public function metodo3(){
-                    echo "Executando método 3 a partir da classe mãe<br>";
+                    echo "Executando método 3 da classe concreta<br>";
+                    echo $this->metodo2('Class 3');
           }
 }
 
