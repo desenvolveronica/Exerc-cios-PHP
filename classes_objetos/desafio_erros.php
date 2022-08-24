@@ -19,16 +19,21 @@ abstract class ClasseAbstrata implements Template {
 class Classe extends ClasseAbstrata {
           function __construct($parametro)
           {
-               $this->parametro = $parametro;   
-               parent::metodo3();  
+               $this->parametro = $parametro;     
           }
           function metodo1(){
-                    echo "Método 1 <br>";
+                    echo "Pode ser vazio desde que tenha corpo e assinatura";
           }
           public function metodo2($parametro){
-                    echo "Método 2 <br>";
+                    echo "Pode ser vazio desde que tenha corpo e assinatura";
           }
 }
 
-$exemplo = new Classe('olá'); 
+$exemplo = new Classe('...'); //colocar pq no construct tem uma parâmetro
 $exemplo-> metodo3();
+echo "<br>";
+echo "<ul>
+<li>Uma classe abstrata pode usar uma interface com o IMPLEMENTS</li>
+<li>Uma classe abrange outra classe com EXTENDS</li>
+<li>Por herança a classe é OBRIGADA a declarar os métodos da sua classe mãe mesmo que nao tenha nada no CORPO</li>
+</ul><br>";
