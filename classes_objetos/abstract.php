@@ -58,3 +58,5 @@ echo "<br>";
 $mae -> metodo2('Método');
 echo "<br>";
 $mae -> metodo3();
+echo "<br><hr>";
+echo "<strong>PODEMOS MUDAR A VISIBILIDADE DE UMA MÉTODO EM UMA CLASSE FILHA DESDE QUE SEJA PARA AUMENTAR A VISIBILIDADE</strong><br>";
