@@ -20,7 +20,7 @@ abstract class FilhaAbstrata extends Abstrata {
           //Ao implementar uma método abstrato é necessário rtirar este marcador (abstract)
 
           public function metodo1(){
-                    echo "Executando método 1 <br>";
+                    echo "Executando método 1. Este está vindo da classe FilhaAbstrata<br>";
           }
 
           abstract public function metodo3();
@@ -29,19 +29,31 @@ echo "Para usar os métodos de uma classe ABSTRATA cuja função é passar por h
 preciso ter uma classe concreta (que pode ser instanciada)<br>";
 echo "<br><hr>";
 class Mae extends FilhaAbstrata {
+
+          public $parametro; 
+
+          function __construct($parametro)
+          {
+                 $this->parametro = $parametro;   
+          }
+
           public function metodo1(){
                     echo "Executando método 1 a partir da classe mãe<br>";
+                    parent::metodo1();
           }
 
           public function metodo2($parametro){
-                    echo "{$parametro}: Neste caso o this para acessar o parâmetro não funciona <br>";
+                    echo "{$this->parametro}: O THIS acessa a propriedade do CONSTRUTOR<br>";
+                    echo "{$parametro}: Sem usar o THIS acessa a propriedade informada na chamada do método<br>";
           }
           public function metodo3(){
                     echo "Executando método 3 a partir da classe mãe<br>";
           }
 }
 
-$mae = new Mae;
+$mae = new Mae('Construtor');
 $mae -> metodo1();
-$mae -> metodo2('parâmetro');
+echo "<br>";
+$mae -> metodo2('Método');
+echo "<br>";
 $mae -> metodo3();
