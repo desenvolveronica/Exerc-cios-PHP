@@ -20,6 +20,11 @@
                 <h3>8. Paradigma O.O</h3>
                 <ul>
                     <li>
+                        <a href="exercicio.php?dir=classes_objetos&file=desafio_erros">
+                            Desafio 7 erros
+                        </a>
+                    </li>
+                    <li>
                         <a href="exercicio.php?dir=classes_objetos&file=abstract">
                             Classe Abstrata
                         </a>
