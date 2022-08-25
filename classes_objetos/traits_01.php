@@ -4,9 +4,10 @@
 
 trait validacao {
 
+          public $valorA = "Valor da TRAIT validacao";
+
           public function validaString($str){
                     //verificar se a string está setada e se é diferente de uma string vazia
-
                     return isset($stg) && $str !== ' ' ? 'validaString passou ': 'validaString não passou';
           }
 
@@ -14,8 +15,10 @@ trait validacao {
 
 trait validacaoMelhor {
 
+          public $valorB = "Valor da TRAIT validacaoMelhor";
+
           public function validaStringMelhor($str){
-                    echo  isset($str) && trim($str) !== ' ' ? 'validaStringMelhor passou ' :'validaStringMelhor não passou';   
+                    echo  isset($str) && trim($str) ? 'validaStringMelhor passou ' :'validaStringMelhor não passou';   
                     //trim -> remove todos os espaços vazioas das pontas
                     //na primeira validação uma string vazia seria válida (" ")
           }
@@ -41,3 +44,10 @@ $novoUsuario = new NovoUsuario;
 echo $novoUsuario -> validaString('teste');
 echo "<br>";
 echo $novoUsuario -> validaStringMelhor('teste');
+
+echo "<br><br>";
+echo "<hr>";
+
+
+echo $novoUsuario->valorA;
+echo "<br>" . $novoUsuario->valorB;
