@@ -5,6 +5,7 @@
 trait validacao {
 
           public $valorA = "Valor da TRAIT validacao";
+          private $valorC = "Valor privado na TRAIT";  //um valor privado pode ser usado de herança a partir de um MÉTODO
 
           public function validaString($str){
                     //verificar se a string está setada e se é diferente de uma string vazia
@@ -38,6 +39,10 @@ echo "<ul>
 
 class NovoUsuario {
           use validacao, validacaoMelhor;
+
+          public function passaValorC(){
+                    echo $this->valorC . " >>> ";
+          }
 }
 
 $novoUsuario = new NovoUsuario;
@@ -48,6 +53,12 @@ echo $novoUsuario -> validaStringMelhor('teste');
 echo "<br><br>";
 echo "<hr>";
 
+echo "Para acesssar uma variável PRIVATE podemos fazer a partir de um método <br>";
+echo  $novoUsuario->passaValorC() . "Acessando o valor privado passando uma FUNCTION <br>";
+
+echo "<br><hr>";
+
 
 echo $novoUsuario->valorA;
 echo "<br>" . $novoUsuario->valorB;
+echo "<br>";
