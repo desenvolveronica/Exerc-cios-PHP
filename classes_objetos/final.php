@@ -63,6 +63,8 @@ echo "<ul>
 <li>Uma classe marcada com FINAL pode ser INSTANCIADA </li>
 </ul>";
 
+
+//***ERRO */
 // class Herdeira extends Unica {
 //           function herdeira(){
 //                     echo "Teste da classe herdeira <br>";
