@@ -32,7 +32,7 @@ $instancia = new NovaClasse;
 $instancia->metodo2();
 
 echo "<ul>
-<li>Quando a (NovaClasse) EXTENDS (abrange) a classe abstrata, o método2 passa a fazer parte do seu escopo automaticamente 
+<li>Quando a (NovaClasse) EXTENDS (abrange) a classe (Abstrata), o método2 passa a fazer parte do seu escopo automaticamente 
 e neste caso, a partir da estância da classe concreta podemos chamar o método final marcado na classe Abstrata</li>
 <li>Quando tentamos declarar este método final na classe que herdeira, ou seja, na (NovaClasse) que EXTENDS sua classe de origem, ou 
 seja (classe Abstrata), é apresentado um erro</li>
@@ -44,3 +44,29 @@ echo "<ul>
 Neste caso, podemos acessar o método da classe
 ABRANGIDA sem precisar DECLARAR este método na classe ABRANGENTE </li>
 </ul>";
+
+echo "<hr>";
+
+
+
+final class Unica {
+          public function unica(){
+                    echo "Método da classe marcada com FINAL <br>";
+          }
+}
+
+$unica = new Unica; 
+$unica->unica();
+
+echo "<ul>
+<li>Marcando a CLASSE com FINAL, ou seja, ela não poderá ter herança</li>
+<li>Uma classe marcada com FINAL pode ser INSTANCIADA </li>
+</ul>";
+
+// class Herdeira extends Unica {
+//           function herdeira(){
+//                     echo "Teste da classe herdeira <br>";
+//           }
+// }
+// $herdeira = new Herdeira;
+// $herdeira->unica();  
