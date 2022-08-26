@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="exercicio.php?dir=classes_objetos&file=final">
+                        <a href="exercicio.php?dir=classes_objetos&file=final copy">
                             Modificador Final
                         </a>
                     </li>
