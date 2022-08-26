@@ -34,7 +34,7 @@ $instancia->metodo2();
 echo "<ul>
 <li>Quando a (NovaClasse) EXTENDS (abrange) a classe (Abstrata), o método2 passa a fazer parte do seu escopo automaticamente 
 e neste caso, a partir da estância da classe concreta podemos chamar o método final marcado na classe Abstrata</li>
-<li>Quando tentamos declarar este método final na classe que herdeira, ou seja, na (NovaClasse) que EXTENDS sua classe de origem, ou 
+<li>Quando tentamos declarar este método final na classe herdeira, ou seja, na (NovaClasse) que EXTENDS sua classe de origem, ou 
 seja (classe Abstrata), é apresentado um erro</li>
 </ul>";
 $instancia->metodo3();
