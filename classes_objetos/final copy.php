@@ -8,6 +8,7 @@ echo "<ul>
 <li>Quando temos uma herança além de ter acesso a métodos e propriedades podemos fazer algumas alterações, se quisermos</li>
 <li>Se marcamos uma classe com FINAL evitamos que ela seja herdada</li>
 <li>É possivel acessar o método FINAL (isso pq a classe não é final) através de uma instância de uma classe herdeira</li>
+<li>Em uma herança de classes (que não são FINAL) não CONSEGUIMOS sobrescrever um método FINAL, mas podemos usa-lo com a instância</li>
 </ul>";
 
 
@@ -24,6 +25,14 @@ class ClasseFilha extends ClassAbstract {
           public function metodoAb1(){  //pela herança um método que antes era abstrato vira CONCRETO
                     return 'Olá, sou um método abstrato que foi herdado <br>';
           }
+
+          //tentando sobrescrever um método FINAL
+
+          // public function metodoAb2(){
+          //           return 'Tentando sobrescrever <br>';
+          // }
+
+          //***erro é apresentado pois não podemos sobrescrever uma método final */
           
 }
 
