@@ -2,4 +2,13 @@
 
 <?php
 
-echo "Classe ou método marcado com o MODIFICADOR FINAL não pode ser sobrescrito ou HERDADO <br><br>";
+
+echo "<ul>
+<p>Observações:</p>
+<li>Quando temos uma herança além de ter acesso a métodos e propriedades podemos fazer algumas alterações, se quisermos</li>
+<li></li>
+<li></li>
+</ul>";
+
+
+
