@@ -67,4 +67,7 @@ final class FinalUnic {
 
 $final = new FinalUnic;
 $final->FinalUnic();
+echo "<br> Acessando atributo sem function <br>";
+
+echo $final ->att . "<br>";
 
