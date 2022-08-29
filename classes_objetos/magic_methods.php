@@ -13,9 +13,9 @@ class Pessoinha {
                     echo "Construtor invocado!! <br>";
          }
 
-//          function __destruct() {
-//                     echo "Tchau <br>";
-//          }
+         function __destruct() {
+                    echo "Tchau <br>";
+         }
 
 
           public function __toString()  //chamaado quando um objeto precisar ser convertido em string este método é chamado
@@ -33,14 +33,14 @@ class Pessoinha {
           }
 
           public function __set($atri, $valor){ //esta function será chamada sempre que houver tentativa 
-                    //de ALTERAR um atributo NÃODEFINIDO
+                    //de ALTERAR um atributo NÃO DEFINIDO
                     echo "Alterando atributo não declarado: {$atri} / {$valor} <br>";
           }
 
           public function __call($metodo, $params){ //ele é chamado sempre que chama um método no objeto que nao existe
                     //necessário passar o método e os parâmetros
-                    echo "Tentando executar o método {$metodo} <br>";
-                    echo "com os parâmetros {$params} <br>";
+                    echo "Tentando executar o método '{$metodo}' <br>";
+                    echo "com os parâmetros '{$params}' <br>";
                     print_r($params);
           }
 
@@ -85,7 +85,27 @@ echo "Acessando CALL <br>";
 echo "Ele é chamado SEMPRE que chama no objeto um método que nao existe <br>";
 echo "O que é passado como parâmetro é um Array <br>";
 echo $pessoinha->funcNaoExiste();
+echo "<br><br>";
+echo $pessoinha->exec('Diva', true, 29);
 echo "<br>";
+echo "<br><hr>";
+
+
+echo "<ul>
+<p>Recapitulando</p>
+<li>__toString():  Quando um objeto precisa ser convertido em STRING. 
+Foi chamado para acessar o THIS do objeto e para acessar diretamente o OBJETO </li>
+<li>__get():  Chamado para acessar uma variável que nao tinha sido definida</li>
+<li>__set(): Chamado para alterar uma variável que não tinha sido defin ida</li>
+<li>__call(): Chamado para acessar um método que não foi criado</li>
+</ul>";
+
+
+echo "Ao passar o null ou unset() é chamado o __destruct <br>";
+unset($pessoinha);
+
+$pessoinha = null; //aqui ele já estava morto
+
 
 
 echo "<br>Cheguei aqui <br>";     
