@@ -16,7 +16,7 @@ abstract class ClassAbstract {
           abstract public function metodoAb1();  //como o método é abstrato ele permite somente a assinatura do método
 
           final public function metodoAb2(){    //como este método é concreto é necessário ter o corpo do método
-                    echo "Não vou mudar! <br>";
+                    echo "Sou FINAL e não vou mudar! <br>";
           }
 
 }
