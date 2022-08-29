@@ -26,6 +26,12 @@ class Pessoinha {
           public function apresente(){
                     echo $this . "<br>"; //this refere-se ao OBJETO e internamente chama o toString
           }
+
+          public function __get($atributs){
+                    return "Lendo um atributo não declarado de valor: {$atributs} <br>"; //não posso usar o TIHS pois 
+                    //o atributo não está no construtor
+          }
+
 }
 
 $pessoinha = new Pessoinha('Tita', 29); //acessado ao chamar o THIS
@@ -43,6 +49,18 @@ echo $pessoinha;
 echo "<br> Alterando o valor da variável nome e chamando a instância <br>";
 $pessoinha->nome = 'Tafônica';
 echo $pessoinha;
+echo "<br><hr>";
+
+
+echo "Acessando GET <br>";
+echo "Não posso usar o THIS para acessar este atributo pois o mesmo não está no constructor <br>";
+echo "Não foi preciso chamar o get, mas como ele 
+já estava definido é retornado o nome da variável não informada <br>";
+echo 'R: '. $pessoinha->nomeCompleto . '<br>';
+
+
+// echo Pessoinha::__get('outro'); gera erro pois o get precisa ser chamado pela instância (dinamicamente)
+
 
 
 echo "<br>Cheguei aqui <br>";     
