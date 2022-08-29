@@ -42,5 +42,29 @@ echo 'R: ' . $FilhaInsta->metodoAb1();
 echo "<br> Acessando método final através da instância da classe HERDEIRA <br>";
 echo 'R: ';
 echo $FilhaInsta->metodoAb2();
+echo "<br><hr>";
+echo "<ul>
+<p>Definindo uma classe como FINAL</p>
+<li>Quando uma classe é definida como FINAL ela NÃO pode ter herança</li>
+<li>Ao tentar gerar uma herança com EXTENDS tudo já para de funcionar</li>
+<li>Podemos INSTANCIAR esta classe FINAL normalmente</li>
+<li>Para acessar um atributo não precisamos necessariamente de uma function. Pode ser feito com o nome da $ instancia -> atributo sem o $</li>
 
+</ul>";
+
+final class FinalUnic {
+
+          public $att = "Atributo classe final";
+
+          public function FinalUnic(){
+                    echo "$this->att <br>";
+          }
+}
+
+// class FilhaUnic extends FinalUnic{
+//           //neste ponto tudo para de funcionar 
+// }
+
+$final = new FinalUnic;
+$final->FinalUnic();
 
