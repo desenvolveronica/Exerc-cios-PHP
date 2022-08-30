@@ -16,6 +16,16 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+            <div class="modulo roxo-escuro">
+                <h3>9. Includes</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=includes&file=include">
+                            Include
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="modulo azul-escuro">
                 <h3>8. Paradigma O.O</h3>
                 <ul>
@@ -451,7 +461,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo vermelho">
+                <div class="modulo roxo-escuro">
                 <h3>1.0 Treinamento</h3>
                 <ul>
                     <li>

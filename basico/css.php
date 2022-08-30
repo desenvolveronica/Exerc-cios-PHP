@@ -28,9 +28,9 @@ echo '</small>';
         justify-content: center;
     }
 
-    <?= "[azul]" ?> {
+    /* <?= "[azul]" ?> {
         color: #4286f4;
-    }
+    } */
 
     [dobro] {
         font-size: <?= 10 - 8 ?>rem;
