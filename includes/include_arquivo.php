@@ -1,9 +1,15 @@
 <?php
 
-echo "Carregando:  include_arquivo <br>";
+echo "<p style='color:blue'>Carregando:  include_arquivo <br></p>";
 
-$variavel = "Estou definida em escopo global <br>"; //variável definida diretamente dentro do arquivo tem escopo global
+$variavel = "Estou definida em escopo global"; //variável definida diretamente dentro do arquivo tem escopo global
 
-function soma($a, $b){
-          return "Soma de '$a' + '$b' = $a + $b <br>";
+
+if(!function_exists('soma')){
+          function soma($a, $b){
+                    $result = $a + $b;
+                    return "Soma de $a + $b = {$result} <br> ";
+          }
+}else{
+          echo "Function já foi chamada antes <br>";
 }
