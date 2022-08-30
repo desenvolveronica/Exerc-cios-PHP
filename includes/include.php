@@ -5,7 +5,7 @@
 echo "Executei a linha do arquivo include <br>";
 
 echo "<br>Inserindo arquivo com include <br>";
-include('include_arquivo.php');
+include('./includes/include_arquivo.php');
 echo "<br> Ao carregar o arquivo com INCLUDE temos a disposição tudo o que foi definido neste arquivo <br>";
 echo "**Acessando função do outro arquivo <br>" . soma(3,5) . "<br>";
 echo "Acessando o conteúdo da variável do outro arquivo <br> '{$variavel}' <br> ";
