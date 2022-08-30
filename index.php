@@ -12,6 +12,7 @@
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Índice dos Exercícios</h2>
+        <button>Parte2</button>
     </header>
     <main class="principal">
         <div class="conteudo">
