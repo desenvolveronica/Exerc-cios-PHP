@@ -20,5 +20,9 @@ include('arquivo_inexistente.php');
 
 echo "<br><hr>";
 
+echo "Usando Require <br>";
+
+echo "***require('novoArquivo_inexistente.php') <br>";
+echo "Qualquer código abaixo de um erro com REQUIRE não é interpretado e a aplicação gerqa erro FATAL <br>";
 
 
