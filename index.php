@@ -12,7 +12,7 @@
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Índice dos Exercícios</h2>
-        <button><a href="./Parte2/index.html">Parte 2</a></button>
+        <!-- <button><a href="./Parte2/index.html">Parte 2</a></button> -->
         
         
     </header>
@@ -30,6 +30,11 @@
                     <li>
                         <a href="exercicio.php?dir=includes&file=include_funcao">
                             Include em Função
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=includes&file=include_require">
+                            Include VS Require
                         </a>
                     </li>
                 </ul>
