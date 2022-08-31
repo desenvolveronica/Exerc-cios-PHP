@@ -12,6 +12,8 @@
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Índice dos Exercícios</h2>
+        <button><a href="./Parte2/index.html">Parte 2</a></button>
+        
         
     </header>
     <main class="principal">
