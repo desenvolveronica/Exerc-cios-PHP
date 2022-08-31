@@ -37,6 +37,11 @@
                             Include VS Require
                         </a>
                     </li>
+                    <li>
+                        <a href="exercicio.php?dir=includes&file=require_return">
+                            Require & Return
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="modulo azul-escuro">
