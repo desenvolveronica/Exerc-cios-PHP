@@ -23,11 +23,4 @@ echo "<br>Lógica também funciona para o REQUIRE com 'require_once' <br>";
 require_once('include_once_arquivo.php');
 
 
-
-
-
-
-
-
-
 echo "<br><br>Cheguei aqui ";
