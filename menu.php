@@ -1,11 +1,11 @@
 
  <nav class="modulos">
-          <div class="modulo roxo-escuro">
+          <div class="modulo laranja-escuro">
                     <h3>10. Namespace</h3>
                     <ul>
                        <li>
                            <a href="exercicio.php?dir=namespace&file=basico">
-                              Include
+                              Exemplo Básico
                            </a>
                        </li>
                     </ul>
