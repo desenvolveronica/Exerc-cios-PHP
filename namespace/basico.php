@@ -1,4 +1,5 @@
 <?php namespace contexto; ?>
+<?php namespace contexto; ?>
 
 <div class="titulo">Exemplo Básico</div>
 
@@ -18,9 +19,24 @@ echo "<ul>
 <li>Fica assim: 'define(__NAMESPACE__ . '\constante2', 456)'</li>
 <li>Se a constante for criada sem o define ela é automaticamente atrelada ao namespace</li>
 </ul>";
-define('contexto\constante2', 456);
-define('teste', 333);
-define(__NAMESPACE__.'\constante3', 789);
+define('contexto\constante2', 'Constante2');
+define('constante3', 'Constante3');
+// define(__NAMESPACE__.'\constante3', 789);
+
+echo constante1 . '<br>';
+
+echo constante2 . '<br>';
+
+echo "<br><hr>";
+
+echo "<ul>
+<li>1) Acessar caminho ABSOLUTO da variavel definida no DEFINE usando \ </li>
+<li>Fica assim:  '\contexto\constante2' </li>
+<li>Acessando sem o \ ele acessa o caminho RELATIVO</li>
+<li style='color: red' >Fica assim:  'contexto\contexto\constante2 ' <strong>=> ERRADO</strong></li>
+</ul>";
+echo \contexto\constante2 . '<br>';
+
 
 
 
