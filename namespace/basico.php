@@ -44,8 +44,8 @@ echo "<ul>
 <li>1) Para acessar um novo contexto estando dentro de outro é necessário colocar o \ </li>
 <li>Fica assim:  '\outro_contexto\constante4' </li>
 </ul>";
-echo \outro_contexto\constante4;
+echo \outro_contexto\constante4 . '<br>';
 
 
 
-echo "Cheguei aqui <br>";
+echo "<br><br>Cheguei aqui";
