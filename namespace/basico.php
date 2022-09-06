@@ -43,9 +43,20 @@ define('outro_contexto\constante4', 'Constante 4');
 echo "<ul>
 <li>1) Para acessar um novo contexto estando dentro de outro é necessário colocar o \ </li>
 <li>Fica assim:  '\outro_contexto\constante4' </li>
+<li>Sem o \ o php assume que o acesso é no contexto atual</li>
+<li>Colocando o \ é explicitado que o acesso é no referido CONTEXTO</li>
 </ul>";
 echo \outro_contexto\constante4 . '<br>';
 
+function somando($a, $b){
+          $res = $a + $b ;
+          // echo 'A soma de ' . $a .' com ' . $b . ' é = '. $a + $b . '<br>';
+          return "A soma de {$a} com {$b} é =  {$res}";
+}
 
-
+echo "Uma função definida dentro de um NAMESPACE pode ser acessada 'echo somando(4,5)' <br>";
+echo "Podemos acessar passando o caminho absoluto ' \contexto\somando(7,8)' <br>";
+echo somando(4,5);
+echo "<br>";
+echo \contexto\somando(7,8);
 echo "<br><br>Cheguei aqui";
