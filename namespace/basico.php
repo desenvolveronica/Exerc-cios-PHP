@@ -37,6 +37,15 @@ echo "<ul>
 </ul>";
 echo \contexto\constante2 . '<br>';
 
+echo "<br><hr>";
+
+define('outro_contexto\constante4', 'Constante 4');
+echo "<ul>
+<li>1) Para acessar um novo contexto estando dentro de outro é necessário colocar o \ </li>
+<li>Fica assim:  '\outro_contexto\constante4' </li>
+</ul>";
+echo \outro_contexto\constante4;
 
 
 
+echo "Cheguei aqui <br>";
