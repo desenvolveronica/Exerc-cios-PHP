@@ -21,7 +21,7 @@ echo "<ul>
 </ul>";
 define('contexto\constante2', 'Constante2');
 define('constante3', 'Constante3');
-// define(__NAMESPACE__.'\constante3', 789);
+// define(__namespace__.'\constante33', 789);
 
 echo constante1 . '<br>';
 
@@ -50,7 +50,6 @@ echo \outro_contexto\constante4 . '<br>';
 
 function somando($a, $b){
           $res = $a + $b ;
-          // echo 'A soma de ' . $a .' com ' . $b . ' é = '. $a + $b . '<br>';
           return "A soma de {$a} com {$b} é =  {$res}";
 }
 
@@ -59,4 +58,21 @@ echo "Podemos acessar passando o caminho absoluto ' \contexto\somando(7,8)' <br>
 echo somando(4,5);
 echo "<br>";
 echo \contexto\somando(7,8);
+echo "<br><br><hr>";
+
+
+function strpos($str, $texto){
+          echo "Buscando a '{$texto}' na string '{$str}' <br>";
+};
+
+echo "Desta forma acessa a function no contexto do NAMESPACE  'strpos('procurando a palavra', 'palavra');' <br>";
+echo strpos('procurando a palavra', 'palavra');
+echo "<br>";
+echo "STRPOS() passa string e texto <br>";
+echo "Diz se aquela string está contida em um texto e em qual posição <br>";
+echo "<br>";
+echo "Usando o \ acessa a function no contexto da API do PHP  '\strpos('procurando a palavra', 'palavra');' <br>";
+echo \strpos('procurando a palavra', 'palavra');
+
+
 echo "<br><br>Cheguei aqui";
