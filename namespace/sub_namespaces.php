@@ -13,5 +13,7 @@ namespace App\Principal;
 //daqui pra baixo está no ESCOPO do novo SUB-NAMESPACE;
 //ex: App\Principal\nova
 echo __NAMESPACE__ . "<br>";
+echo "Variável está no contexto 'App\Principal\ nova' <br>";
 const nova = 123;
 echo nova;
+
