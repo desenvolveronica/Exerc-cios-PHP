@@ -8,8 +8,13 @@
                               Exemplo Básico
                            </a>
                        </li>
+                       <li>
+                           <a href="exercicio.php?dir=namespace&file=sub_namespaces">
+                              Sub Namespaces
+                           </a>
+                       </li>
                     </ul>
-          </div>
+            </div>
             <div class="modulo roxo-escuro">
                 <h3>9. Includes</h3>
                 <ul>
