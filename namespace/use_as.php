@@ -13,7 +13,7 @@ echo \Nome\Bem\Grande\constante ;
 echo "<br><hr>";
 
 function soma($a, $b){
-          return $a . $b ; //propositalmente errado e com o conflito de nome pois ambas são SOMA
+          return $a . $b . " Concatenando ao invés de somar com FUNCTION SOMA <br>" ; //propositalmente errado e com o conflito de nome pois ambas são SOMA
 }
 
 class Classe{
@@ -33,3 +33,8 @@ echo 'Usando AS' . '<br>';
 use Nome\Bem\Grande as ctx; //as para criar um apelido
 
 echo ctx\constante; //usando o APELIDO
+
+echo "<br><hr>";
+echo "Neste ponto ainda estamos em: -> ". __NAMESPACE__ . "<br>";
+echo soma(1,2);
+echo \Nome\Bem\Grande\soma(1,2); //acessa a function do outro arquivo

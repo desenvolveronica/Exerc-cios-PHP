@@ -5,7 +5,7 @@ echo 'Estamos no: ' . __NAMESPACE__ . '<br>';
 
 const constante = 'Constante definida no: -> **Nome\Bem\Grande' . '<br>';
 function soma($a, $b){
-          return $a + $b;
+          return $a + $b . " Somando em Nome\Bem\Grande <br>";
 }
 
 class Classe {
