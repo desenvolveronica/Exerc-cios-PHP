@@ -4,7 +4,7 @@
 <?php
 echo __NAMESPACE__ . "<br>";
 echo "Criando contante com DEFINE <br>";
-define('App\constante', 'criada no APP');
+define('App\constante', 'Criada no NAMESPACE APP');
 echo 'Constante criada no NAMESPACE APP => ', constante , "<br>";  //VALOR :   criada no namespace APP
 echo "<br><hr>";
 echo "**Inserindo SUB-NAMESPACE <br><br>";
@@ -28,6 +28,12 @@ echo "<br><hr>";
 namespace APP\Principal\Especifico; 
 echo __NAMESPACE__ . '<br><br>';
 
-const constante = 456;
-echo 'Denstro do "APP\Principal\Especifico" a constante vale =>' . constante . '<br>';
+const constante = 'Criada no SUB-NAMESPACE Especifico';
+echo 'Dentro do "APP\Principal\Especifico" a constante vale =>' . constante . '<br>';
+echo "<br><hr>";
+echo "<p>Constante com mesmo nome e valores diferentes em SUB-NAMESPACES diferentes</p>";
+echo \App\constante , '<br>'; 
+echo \App\Principal\constante . '<br>'; 
+echo constant('\\' . __NAMESPACE__ . '\constante'). "<br>"; //   ***coloca o \\ para ele considerar o \
+echo \APP\Principal\Especifico\constante . '<br>';
 
