@@ -23,4 +23,11 @@ echo "Esta constante tem o mesmo nome de outra, mas como estão em NAMESPACES di
 define('App\Principal\constante', 'Criada no SUB-NAMESPACE principal'); //VALOR:  criada no SUB-NAMESPACE principal
 echo '<br> R: ', constante . '<br>';
 
+echo "<br><hr>";
+// echo "Sub-Namespace do Sub-Namespace <br>";
+namespace APP\Principal\Especifico; 
+echo __NAMESPACE__ . '<br><br>';
+
+const constante = 456;
+echo 'Denstro do "APP\Principal\Especifico" a constante vale =>' . constante . '<br>';
 
