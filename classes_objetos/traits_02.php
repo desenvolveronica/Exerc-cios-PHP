@@ -43,7 +43,7 @@ echo "<ul>
 
 $novissimoUsuario = new NovissimoUsuario;
 
-echo $novissimoUsuario->validarString('teste') . "<br>";
+echo $novissimoUsuario->validacaoSimples('teste') . "<br>";
 
 
 echo "<br> Método ignorado sendo chamado passando ALIAS dentro das chaves <br>";
@@ -62,7 +62,7 @@ class OutroNovo {
 
 $outroNovo = new OutroNovo;
 echo "Outra TRAIT em uso <br>";
-echo $outroNovo-> validarString('') . "<br>";
+echo $outroNovo-> validacaoCompleta('') . "<br>";
 echo "<br> Usando o ALIAS da outra TRAIT <br>";
 echo $outroNovo->validacaoCompleta('Outro');
 
