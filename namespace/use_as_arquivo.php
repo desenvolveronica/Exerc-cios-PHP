@@ -1,15 +1,15 @@
 <?php
 namespace Nome\Bem\Grande;
 
-echo __NAMESPACE__ . '<br>';
+echo 'Estamos no: ' . __NAMESPACE__ . '<br>';
 
-const constante = 123;
+const constante = 'Constante definida no: -> **Nome\Bem\Grande' . '<br>';
 function soma($a, $b){
           return $a + $b;
 }
 
 class Classe {
-          public $var; 
+          public $var = 'Variável em: **Nome\Bem\Grande'; 
 
           function func(){
                  echo __NAMESPACE__ . '-> ' . __CLASS__ . '-> ' . __METHOD__ . '<br>';  
