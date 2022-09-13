@@ -24,7 +24,7 @@ class Classe{
           }
 }
 echo 'Usando USE' . '<br>';
-echo "Use pode ser associado a uma CONSTANTE ou a uma FUNÇÃO<br>";
+echo "Use pode ser associado a uma CONSTANTE, CLASS e a uma FUNÇÃO<br>";
 echo "<br> Não é preciso usar o caminho (absoluto\) pois estando no contexto do USE o relativo já funciona <br>";
 use const Nome\Bem\Grande\constante; //daqui pra baixo está usando o namespace Nome\Bem\Grande
 //neste ponto podemos usar a const vonstante como se ela estivesse no PRÓPRIO arquivo
@@ -55,7 +55,7 @@ echo "<br><hr>";
 echo "Acessando a classe criada no arquivo chamado pelo INCLUDE <br>";
 // $clArquivo = new \Nome\Bem\Grande\Classe; funciona
 $clArquivo = new ctx\Classe; //funciona
-use Nome\Bem\Grande\Classe as classinha;
+use Nome\Bem\Grande\Classe as classinha;  //apelido na classe
 
 $classinha = new classinha; 
 echo $classinha->var . "<br>";
@@ -64,6 +64,7 @@ echo "<br>Outro Exemplo <br>";
 
 echo $clArquivo->var . "<br>";
 $classinha->func(); 
+
 
 
 
