@@ -54,11 +54,16 @@ echo "<br><hr>";
 
 echo "Acessando a classe criada no arquivo chamado pelo INCLUDE <br>";
 // $clArquivo = new \Nome\Bem\Grande\Classe; funciona
-// $clArquivo = new ctx\Classe; //funciona
+$clArquivo = new ctx\Classe; //funciona
 use Nome\Bem\Grande\Classe as classinha;
 
 $classinha = new classinha; 
 echo $classinha->var . "<br>";
+
+echo "<br>Outro Exemplo <br>";
+
+echo $clArquivo->var . "<br>";
+$classinha->func(); 
 
 
 
