@@ -12,6 +12,6 @@ class Classe {
           public $var = 'Variável em: **Nome\Bem\Grande'; 
 
           function func(){
-                 echo __NAMESPACE__ . '-> ' . __CLASS__ . '-> ' . __METHOD__ . '<br>';  
+                 echo '<br>' . 'Funcão criada no Nome\Bem\Grande: ' . '<br>' .__NAMESPACE__ . '-> ' . __CLASS__ . '-> ' . __METHOD__ . '<br>';  
           }
 }
