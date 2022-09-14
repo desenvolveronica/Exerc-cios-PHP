@@ -36,9 +36,12 @@ echo "<ul>
 echo "<hr>";
 echo "<p>Lançando uma exceção throw</p>";
 
-// try{ 
-//       throw new Exception() //throw é lançar
-// }
+try{ 
+      throw new Exception('Um erro muito estranho lançado pelo **throw new Exception '); //throw é lançar
+      intdiv(7,0);
+} catch(DivisionByZeroError $e){
+
+}    
 
 echo "<ul>
 <p>Exception é a classe base para todas as Exceptions</p>
