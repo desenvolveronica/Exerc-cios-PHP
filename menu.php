@@ -4,7 +4,7 @@
                     <h3>11. Tratamento de Erro</h3>
                     <ul>
                        <li>
-                           <a href="exercicio.php?dir=tratamento_erro&file=try_catch">
+                           <a href="exercicio.php?dir=tratamento_erro&file=try_catch copy">
                               Try & Catch
                            </a>
                        </li>
