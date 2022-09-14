@@ -41,6 +41,7 @@ echo "<ul>
 <li>Em o throw quando for acessar a mensagem da variável '$ e', ele vai mandar a mensagem do catch</li>
 <li>Valor da variável: <br> $e</li>
 <li>Colocar as exceções mais específicas antes e as genéricas depois pois o contrário faz sempre cair na mais genérica</li>
+<li>O FINALLY sempre é chamado</li>
 </ul>";
 
 try{
@@ -51,4 +52,7 @@ try{
           echo "Divisão por zero <br>";
 } catch(Throwable $e){
           echo "Erro encontrado: ". $e->getMessage();
+} finally {
+          echo "Finally sempre é chamado <br>";
 }
+echo  "";
