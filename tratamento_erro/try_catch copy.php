@@ -61,12 +61,29 @@ try{
       intdiv(7,0);
 } catch(DivisionByZeroError $e){
       echo "R: new Exception sem throw <br>";
-} catch(Throwable $e){
+} catch(Throwable $e){  
       echo "R: Erro encontrado: " . $e->getMessage() . '<br>';
 }
 
 echo "<ul>
 <li>Usamos o getMessage() para acessar a partir da variável a string passada no throw</li>
 <li>Se não usarmos o throw a mensagem passada será a do catch</li>
-<li></li>
+<li>Colocar as exceções mais específicas ant4es e as mais genéricas no catch posterior</li>
+<li>Throwable é um erro mais genérico pois pode ser tanto Error quanto Exception</li>
+<li>DivisionByZeroError é um erro mais específico</li>
 </ul>";
+
+echo "<hr>";
+echo "<p style='color: blue'>O Finally é sempre imprimido mesmo se o try executou sem erro</p>";
+
+try{
+      throw new Exception('Será lido pois tem o throw');
+      intdiv(7,0);
+} catch(DivisionByZeroError $e){
+      echo "R: new Exception sem throw <br>";
+} catch(Throwable $e){  
+      echo "R: Erro encontrado: " . $e->getMessage() . '<br>';
+} finally{
+      echo "Eu sou um Finally <br>";
+}
+
