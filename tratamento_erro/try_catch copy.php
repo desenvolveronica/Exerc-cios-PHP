@@ -2,12 +2,12 @@
 
 <?php
 
-echo "<p>Usamos quando temos uma sentença de código que PODE dar erro</p>";
+echo "<p style='color:red'>Usamos quando temos uma sentença de código que PODE dar erro</p>";
 
 try{ //try é TENTAR
           intdiv(7,0);
 } catch(Error $e){
-      echo "Gerou um erro <br>";    
+      echo "R: Gerou um erro <br>";    
 }
 echo "<ul>
 <li>Para usar o catch é preciso tipar a variável de erro($+e) com Error</li>
@@ -17,12 +17,12 @@ echo "<ul>
 <li>No try temos um código que PODE gerar erro e caso isso ocorra o catch é chamado</li>
 </ul>";
 echo "<hr>";
-echo "<p>Usando mais de 1 catch</p>";
+echo "<p style='color:blue'>Usando mais de 1 catch</p>";
 
 try{ //try é TENTAR
       intdiv(7,0);
 } catch(Error $e){
-  echo "Teve um ERROR aqui :( <br>";    
+  echo "R: Teve um ERROR aqui :( <br>";    
 } catch(Exception $e){
       echo "Teve uma Exception aqui :/ ";
 }
@@ -34,15 +34,15 @@ echo "<ul>
 <li>Mesmo tendo um erro no arquivo quando fazemos o tratamento a execução NÃO é interrompida</li>
 </ul>";
 echo "<hr>";
-echo "<p>Lançando uma exceção throw</p>";
+echo "<p style='color:blue'>Lançando exceção throw</p>";
 
 try{ 
-      throw new Exception('Um erro muito estranho lançado pelo **throw new Exception '); //throw é lançar
+      throw new Exception('Um erro muito estranho lançado pelo **throw new Exception() '); //throw é lançar
       intdiv(7,0);
 } catch(DivisionByZeroError $e){
       echo "throw new Exception <br>";
 } catch(Throwable $e){  //Throwable serve para lançar tanto exceção quanto erro
-      echo "Erro encontrado: " . $e->getMessage(); //erro está acessndo a mensaqgem informada como parâmetro no throw
+      echo "R: Erro encontrado: " . $e->getMessage() . '<br>'; //erro está acessndo a mensaqgem informada como parâmetro no throw
 }
 
 echo "<ul>
@@ -50,4 +50,23 @@ echo "<ul>
 <li>Error: Usamos quando algo fatal e muiuto grave acontece </li>
 <li>Exception: Usamos quando temos uma exceção para a regra</li>
 <li>Throwable é a interface base para qualquer objeto que pode ser lançado( Error e Exception)</li>
+<li>Quando lançamos(throw) ou seja, usamos o throw new e o tipo de erro, a message é a string que é declarada nos 
+parênteses da construção do objeto </li>
+</ul>";
+echo "<hr>";
+echo "<p style='color: blue'>Message quando não usamos throw atrelado ao new</p>";
+
+try{
+      new Exception('Não será lido pois não tem o throw');
+      intdiv(7,0);
+} catch(DivisionByZeroError $e){
+      echo "R: new Exception sem throw <br>";
+} catch(Throwable $e){
+      echo "R: Erro encontrado: " . $e->getMessage() . '<br>';
+}
+
+echo "<ul>
+<li>Usamos o getMessage() para acessar a partir da variável a string passada no throw</li>
+<li>Se não usarmos o throw a mensagem passada será a do catch</li>
+<li></li>
 </ul>";
