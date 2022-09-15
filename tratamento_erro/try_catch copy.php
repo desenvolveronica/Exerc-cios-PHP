@@ -40,12 +40,14 @@ try{
       throw new Exception('Um erro muito estranho lançado pelo **throw new Exception '); //throw é lançar
       intdiv(7,0);
 } catch(DivisionByZeroError $e){
-
-}    
+      echo "throw new Exception <br>";
+} catch(Throwable $e){  //Throwable serve para lançar tanto exceção quanto erro
+      echo "Erro encontrado: " . $e->getMessage(); //erro está acessndo a mensaqgem informada como parâmetro no throw
+}
 
 echo "<ul>
 <p>Exception é a classe base para todas as Exceptions</p>
 <li>Error: Usamos quando algo fatal e muiuto grave acontece </li>
 <li>Exception: Usamos quando temos uma exceção para a regra</li>
-<li></li>
+<li>Throwable é a interface base para qualquer objeto que pode ser lançado( Error e Exception)</li>
 </ul>";
