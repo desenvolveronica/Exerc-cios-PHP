@@ -11,7 +11,7 @@ echo "<p style='color: blue'>O que determina que a classe é uma exceção é a 
 
 class FaixaEtariaException extends Exception {
           function __construct($message, $code = 0, $previous = null){
-                    echo "Erro personalizado: $message <br>";
+                    echo "<br>Erro personalizado: $message <br>"; //sempre chamado quando entra no if 
                     parent::__construct($message, $code, $previous);
           }
 
