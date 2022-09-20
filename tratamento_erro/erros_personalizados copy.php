@@ -37,6 +37,6 @@ echo "<br><hr>";
 
 echo "Usando foreach <br>";
 
-foreach($idadesAvaliadas as $i){
+foreach($idadesAvaliadas as $idade){
 
 }
