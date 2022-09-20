@@ -13,6 +13,11 @@
                               Erros Personalizados
                            </a>
                        </li>
+                       <li>
+                           <a href="exercicio.php?dir=tratamento_erro&file=desafio_intDiv">
+                              Desafio IntDiv
+                           </a>
+                       </li>
                     </ul>
         </div>
           <div class="modulo laranja-escuro">
