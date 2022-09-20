@@ -8,6 +8,7 @@ echo "<ol>
 <li>'$ previous' é quando a exceção foi causada por uma outra exceção</li>
 </ol>";
 echo "<p style='color: blue'>O que determina que a classe é uma exceção é a herança onde usamos extends Exception</p>";
+
 class FaixaEtariaException extends Exception {
           function __construct($message, $code = 0, $previous = null){
                     echo "Erro personalizado: $message <br>";
@@ -15,14 +16,14 @@ class FaixaEtariaException extends Exception {
           }
 
 }
-$FaixaEtariaException = new FaixaEtariaException('Instanciando a classe');
-echo "<br>";
+// $FaixaEtariaException = new FaixaEtariaException('Instanciando a classe');
+// echo "<br>";
 function calcularTempoAposentadoria($idade){
           if($idade < 18){
-                    throw new FaixaEtariaException('Ainda está muito longe');
+                    throw new FaixaEtariaException('Ainda está muito longe'); //está instanciando
           }
           if($idade > 70){
-                    throw new FaixaEtariaException('Já deveria estar aposentado');
+                    throw new FaixaEtariaException('Já deveria estar aposentado'); //está instanciando
           }
 
           return 70 - $idade;
@@ -37,6 +38,13 @@ echo "<br><hr>";
 
 echo "Usando foreach <br>";
 
-foreach($idadesAvaliadas as $idade){
-
+foreach($idadesAvaliadas as $idade){ //cada elemento do array vai ser chamado pela variável $idade
+          try{
+                  $tempoRestante = calcularTempoAposentadoria($idade);
+                  echo "Idade: $idade / falta: $tempoRestante anos <br>";
+                  //no catch vamos tratar a exceção da classe FaixaEtariaException
+          } catch(FaixaEtariaException $e){ //$e é a exceção e FaixaEtariaException é o tipo dele
+                    echo "Não foi possivel calcular para a idade $idade anos<br>";
+                    echo "Motivo: {$e->getMessage()} <br><br>";
+          }         
 }
