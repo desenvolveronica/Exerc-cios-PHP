@@ -31,4 +31,12 @@ function calcularTempoAposentadoria($idade){
 $idadesAvaliadas = [15, 30, 60, 80];
 
 echo "Para tratar todas as idades é necessário um looping contendo um try e catch 
-<br> Se não houver o tratamento do erro no primeiro caso que nao chegar no momento do retorno já finalizaria o looping <br>";
+<br> Se não houver try e catch na primeira exceção o for iria finalizar<br>";
+
+echo "<br><hr>";
+
+echo "Usando foreach <br>";
+
+foreach($idadesAvaliadas as $i){
+
+}
