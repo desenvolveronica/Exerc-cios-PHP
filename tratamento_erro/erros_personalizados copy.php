@@ -20,7 +20,7 @@ class FaixaEtariaException extends Exception {
 // echo "<br>";
 function calcularTempoAposentadoria($idade){
           if($idade < 18){
-                    throw new FaixaEtariaException('Ainda está muito longe'); //está instanciando
+                    throw new FaixaEtariaException('Ainda está muito longe para se aposentar'); //está instanciando
           }
           if($idade > 70){
                     throw new FaixaEtariaException('Já deveria estar aposentado'); //está instanciando
@@ -29,7 +29,7 @@ function calcularTempoAposentadoria($idade){
           return 70 - $idade;
 }
 
-$idadesAvaliadas = [15, 30, 60, 80];
+$idadesAvaliadas = [15, 30, 60, 80, 29];
 
 echo "Para tratar todas as idades é necessário um looping contendo um try e catch 
 <br> Se não houver try e catch na primeira exceção o for iria finalizar<br>";
