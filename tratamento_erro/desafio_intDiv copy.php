@@ -18,7 +18,7 @@ function intdiv($a, $b){
           //$a % $b > 0 significa que temos uma divisão não inteira
           if($a % $b > 0) {
                     throw new NaoInteiroException();
-                    echo "Acessando a classe para a exceção de não inteiro <br>";
+                    
           }
           return $a / $b;
 }
