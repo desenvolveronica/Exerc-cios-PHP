@@ -15,6 +15,11 @@ try {
     echo "Resultado não é um número inteiro <br>";
 }
 
+try {
+    echo intdiv(8,0) . '<br>';
+}catch(DivisionByZeroError $e){
+    echo "Divisão por zero <br>";
+}
 
 
 

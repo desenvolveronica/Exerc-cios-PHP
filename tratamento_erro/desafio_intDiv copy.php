@@ -12,7 +12,6 @@ class NaoInteiroException extends \Exception{
 function intdiv($a, $b){
           if($b == 0){
                     throw new \DivisionByZeroError();  //colocando o \ refere3nciando que estou acessando algo pertencente ao PHP
-                    echo "Divisão por zero <br>";
           }
 
           //$a % $b > 0 significa que temos uma divisão não inteira
