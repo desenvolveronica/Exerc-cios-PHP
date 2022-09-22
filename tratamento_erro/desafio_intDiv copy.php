@@ -6,10 +6,19 @@ echo "Usar o \Exception para herdar de uma EXCEPTION quando estamos em um namesp
 //como vamos herdar de exception temos que acessar o namespace raiz que é onde a mesma está definida
 class NaoInteiroException extends \Exception{
 
+
 }
 
 function intdiv($a, $b){
           if($b == 0){
                     throw new \DivisionByZeroError();  //colocando o \ refere3nciando que estou acessando algo pertencente ao PHP
+                    echo "Divisão por zero <br>";
           }
+
+          //$a % $b > 0 significa que temos uma divisão não inteira
+          if($a % $b > 0) {
+                    throw new NaoInteiroException();
+                    echo "Acessando a classe para a exceção de não inteiro <br>";
+          }
+          return $a / $b;
 }

@@ -18,9 +18,14 @@
                               Desafio IntDiv
                            </a>
                        </li>
-                       <li>
+                       <!-- <li>
                            <a href="exercicio.php?dir=tratamento_erro&file=desafio_intDiv copy">
-                              Desafio IntDiv Outra forma
+                              Desafio IntDiv insumos para teste
+                           </a>
+                       </li> -->
+                       <li>
+                           <a href="exercicio.php?dir=tratamento_erro&file=desafio_intDiv teste">
+                              Desafio IntDiv Teste
                            </a>
                        </li>
                     </ul>
