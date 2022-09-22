@@ -21,5 +21,8 @@ try {
     echo "Divisão por zero <br>";
 }
 
+echo intdiv(8, 2) ."<br>";
+
+echo 'Acessando a API do PHP : ' . \intdiv(8, 2) .' <br>';
 
 

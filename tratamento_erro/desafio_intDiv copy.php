@@ -19,5 +19,5 @@ function intdiv($a, $b){
                     throw new NaoInteiroException();
                     
           }
-          return $a / $b;
+          return 'Não caiu em nenhum erro ou exception : '. $a / $b;
 }
