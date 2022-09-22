@@ -18,6 +18,11 @@
                               Desafio IntDiv
                            </a>
                        </li>
+                       <li>
+                           <a href="exercicio.php?dir=tratamento_erro&file=desafio_intDiv copy">
+                              Desafio IntDiv Outra forma
+                           </a>
+                       </li>
                     </ul>
         </div>
           <div class="modulo laranja-escuro">

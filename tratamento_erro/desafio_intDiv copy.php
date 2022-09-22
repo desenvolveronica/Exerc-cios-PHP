@@ -1,6 +1,15 @@
-
 <?php
+namespace Aritmetica; 
 echo "O namespace é a primeira declaração em um arquivo PHP, mesmo antes do HTML <br>";
+echo "Usar o \Exception para herdar de uma EXCEPTION quando estamos em um namespace <br>";
+//classe lançada quando tiver uma exceção não inteira
+//como vamos herdar de exception temos que acessar o namespace raiz que é onde a mesma está definida
+class NaoInteiroException extends \Exception{
 
+}
 
-echo "Original 8/3: ". intdiv(8 , 3);
+function intdiv($a, $b){
+          if($b == 0){
+                    throw new \DivisionByZeroError();  //colocando o \ refere3nciando que estou acessando algo pertencente ao PHP
+          }
+}
