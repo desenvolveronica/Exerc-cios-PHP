@@ -42,7 +42,16 @@ function filtrarMensagem($errno, $errstring){
           //o primeiro caracter comece no índice 1
           //dupla negação para converter em booleano pois pode retornar um inteiro
 }
-echo "<p><strong style='color: red'>Alerta:</strong>  usando '' aspas simples o '!!stripos $errstring' não reconhece</p><br>";
+set_error_handler('filtrarMensagem', E_WARNING);
+
+echo "<p><strong style='color: red'>Alerta:</strong>  usando aspas simples o parâmetro ($ errstring) em '!!stripos 
+$errstring', a function não reconhece</p><br>";
+
+echo "<hr>";
+
+
+
+
 
 echo "<br><br>";
 echo "<br>Cheguei aqui";
