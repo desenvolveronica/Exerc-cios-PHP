@@ -17,6 +17,7 @@ try {
 
 try {
     echo intdiv(8,0) . '<br>';
+    //não estamos usando o / para o DivisionByZeroError pois não estamos usando o namespace 
 }catch(DivisionByZeroError $e){
     echo "Divisão por zero <br>";
 }

@@ -5,7 +5,7 @@ echo "Usar o \Exception para herdar de uma EXCEPTION quando estamos em um namesp
 //classe lançada quando tiver uma exceção não inteira
 //como vamos herdar de exception temos que acessar o namespace raiz que é onde a mesma está definida
 class NaoInteiroException extends \Exception{
-
+          
 
 }
 
