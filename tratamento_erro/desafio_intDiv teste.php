@@ -26,4 +26,5 @@ echo intdiv(8, 2) ."<br>";
 
 echo 'Acessando a API do PHP : ' . \intdiv(8, 2) .' <br>';
 
+echo "Usando o / saimos do namespace e acessamos a função da API do PHP <br>";
 
