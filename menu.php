@@ -18,14 +18,14 @@
                               Desafio IntDiv
                            </a>
                        </li>
-                       <!-- <li>
-                           <a href="exercicio.php?dir=tratamento_erro&file=desafio_intDiv copy">
-                              Desafio IntDiv insumos para teste
-                           </a>
-                       </li> -->
                        <li>
                            <a href="exercicio.php?dir=tratamento_erro&file=desafio_intDiv teste">
                               Desafio IntDiv Teste
+                           </a>
+                       </li>
+                       <li>
+                           <a href="exercicio.php?dir=tratamento_erro&file=gerenciador_erro">
+                              Error Handler
                            </a>
                        </li>
                     </ul>
