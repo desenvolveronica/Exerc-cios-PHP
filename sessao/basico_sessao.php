@@ -6,12 +6,12 @@ echo "<ul>
 <li>Temos um array associado ao SESSION</li>
 <li>Para acessar os elementos da session 'print_r($_session)' pois é um array</li>
 <li>O array '$_ session []' é composto de chaves</li>
+<li>Session É CASE SENSITIVE</li>
 </ul>";
 
-echo print_r($_SESSION);
+print_r($_SESSION);
 echo "<br>";
 
 if(!$_SESSION['nome']){
-          $_session['nome'] = 'Diva';
+          $_SESSION['nome'] = 'Diva';
 }
-
