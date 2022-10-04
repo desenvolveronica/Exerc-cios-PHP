@@ -3,9 +3,10 @@
 <?php
 session_start();
 echo "<ul>
+<li>Usando 'session_start()'</li>
 <li>Temos um array associado ao SESSION</li>
 <li>Para acessar os elementos da session 'print_r($_session)' pois é um array</li>
-<li>O array '$_ session []' é composto de chaves</li>
+<li>O <b>array</b> '$_ session []' é composto de chaves</li>
 <li>Session É CASE SENSITIVE</li>
 </ul>";
 
@@ -23,6 +24,6 @@ if(!$_SESSION['email']){
 
 ?>
 
-<p style='text-decoration: nome'>
-   <a href="/sessao/Basico_sessao_alterar.php" style="color: blueviolet" >Alterar Sessão</a>
+<p>
+   <a href="/sessao/basico_sessao_alterar.php" style="color: blueviolet" >Alterar Sessão</a>
 </p>
