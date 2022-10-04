@@ -8,6 +8,7 @@ echo "<ul>
 <li>Para acessar os elementos da session 'print_r($_session)' pois é um array</li>
 <li>O <b>array</b> '$_ session []' é composto de chaves</li>
 <li>Session É CASE SENSITIVE</li>
+<li>Os valores das chaves é salvo no</li>
 </ul>";
 
 print_r($_SESSION);
