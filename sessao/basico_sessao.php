@@ -15,3 +15,14 @@ echo "<br>";
 if(!$_SESSION['nome']){
           $_SESSION['nome'] = 'Diva';
 }
+
+if(!$_SESSION['email']){
+          $_SESSION['email'] = 'diva@novelesca.com';
+
+}
+
+?>
+
+<p style='text-decoration: nome'>
+   <a href="/sessao/Basico_sessao_alterar.php" style="color: blueviolet" >Alterar Sessão</a>
+</p>
