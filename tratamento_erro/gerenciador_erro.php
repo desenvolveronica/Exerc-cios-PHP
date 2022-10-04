@@ -38,6 +38,7 @@ echo "stripos() => Localizar a posição da primeira ocorrência de uma string /
 //se retornar FALSE a mensagem não será filtrada e SERÁ EXIBIDA
 function filtrarMensagem($errno, $errstring){
           $text = 'include'; //texto que quero procurar
+          
           return !!stripos(" $errstring", $text); // em ' $errstring'=> está deixando a posição 0 vazia para que 
           //o primeiro caracter comece no índice 1
           //dupla negação para converter em booleano pois pode retornar um inteiro
@@ -45,13 +46,16 @@ function filtrarMensagem($errno, $errstring){
 set_error_handler('filtrarMensagem', E_WARNING);
 
 echo "<p><strong style='color: red'>Alerta:</strong>  usando aspas simples o parâmetro ($ errstring) em '!!stripos 
-$errstring', a function não reconhece</p><br>";
+$errstring', a function não reconhece</p>";
 
+
+echo "***Mensagem de erro não exibida pois a function filtrou e como encontrou o texto foi marcada para não exibir<br>";
+echo "<br>";
+include('arquivo_inexistente.php'); //não exibido pois foi filtrado
+// echo  4 / 0 ;
 echo "<hr>";
-
-
-
-
-
+echo "***Com o 'restore_error_handler()' o handler volta ao estágio inicial e perde o filtro <br>";
+restore_error_handler();
+include('arquivo_inexistente.php');
 echo "<br><br>";
 echo "<br>Cheguei aqui";
