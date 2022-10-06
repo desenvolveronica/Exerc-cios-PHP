@@ -30,7 +30,7 @@ $_SESSION['nome'] = 'Alterado';
     <b>Nome: </b><?=  $_SESSION['nome']?><br>
     <b>Email: </b><?=  $_SESSION['email']?>
 </p>
-<strong style="color:red; font-weight: bold; font-size: 25px">Alteração reflete entre os arquivos</strong>
+<strong style="color:red; font-weight: bold; font-size: 25px">Alteração reflete entre os arquivos </strong>
 <br>
 
 <div style="display: flex; padding: 20px">
