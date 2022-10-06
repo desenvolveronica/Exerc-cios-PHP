@@ -16,14 +16,14 @@ echo "É necessário inicializar a sessão nelas <br>";
 <?php
 
 if($_SESSION['nome'] == 'Diva'){
-          $_SESSION['nome'] = 'Novelesca';
+          $_SESSION['nome'] = 'Alterado';
 }
 
-$_SESSION['email'] = 'Novelesca.com.br';
+$_SESSION['email'] = 'Alterado.com.br';
 
 print_r($_SESSION);
 
-$_SESSION['nome'] = 'Alterado';
+$_SESSION['nome'] = 'AlteradoNovo';
 
 ?>
 <p>
