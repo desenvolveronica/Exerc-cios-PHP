@@ -11,25 +11,22 @@
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Visualização do Exercício</h2>
- 
     </header>
     <nav class="navegacao">
+       
         <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
             class="verde">Sem formatação</a>
-        <a href="index.php" class="vermelho">Voltar</a>
+        <a href="index.php">Voltar</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
             <?php
                 include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
             ?>
-            <?php echo '<br>' . ('Esta parte está vindo de exercício'); 
-            // echo '<br>' . __DIR__ . '<br>';
-            ?>
         </div>
     </main>
     <footer class="rodape">
-        desenvolveronica © <?= date('Y'); ?>
+        COD3R & ALUNOS © <?= date('Y'); ?>
     </footer>
 </body>
 </html>
