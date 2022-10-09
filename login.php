@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="recursos/css/estilo.css">
     <title>Curso PHP</title>
 </head>
-<body>
+<body class="login">
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Seja bem vindo</h2>
