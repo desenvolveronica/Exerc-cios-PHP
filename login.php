@@ -1,3 +1,42 @@
+<?php 
+session_start();
+
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+$_SESSION['erros'] = null;
+
+if($_POST['email']){
+    //array como se fosse banco de dados para login
+    $usuarios = [
+        [
+            "nome" => "Veronica",
+            "email" => "veronikahelena@gmail.com",
+            "senha" => "123456"
+        ],
+        [
+            "nome" => "Diva",
+            "email" => "diva@gmail.com",
+            "senha" => "123456"
+        ],
+    ];
+    foreach($usuarios as $usuario){
+        $emailValido = $email === $usuario['email'];
+        $senhaValida = $senha === $usuario['senha'];
+
+        if($emailValido && $senhaValida){
+            $_SESSION['erros'] = null;
+            $_SESSION['usuario'] = $usuario['nome'];
+            header('Location: index.php');
+        }
+    };
+
+    if(!$_SESSION['usuario']){
+        $_SESSION['erros'] = ['Usuário/Senha inválido'];
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head class="login">
@@ -72,5 +111,13 @@ button.button:hover{
     align-items: center;
     justify-content: center;
     
+}
+.erros > p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #FFF;
+    background-color: #ff4500;
+    padding: 10px 25px;
+    margin-top: 0px;
 }
 </style>
