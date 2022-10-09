@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="recursos/css/estilo.css">
+    <link rel="stylesheet" href="recursos/css/login.css">
     <title>Curso PHP</title>
 </head>
 <body class="login">
@@ -14,7 +15,7 @@
 
     <main class="principal" style="margin-top: 45px">
         <div class="conteudo">
-           <h3>Identifique-se</h3>
+           <h3>ACESSE SUA CONTA</h3>
 
            <?php  if($_SESSION['erros']): ?>
                 <div class="erros">
@@ -33,6 +34,7 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" id="senha">
                 </div>
+                <button class="button">Entrar</button>
            </form>
 
         </div>
@@ -45,33 +47,30 @@
 </html>
 
 <style>
-    .index_buttom{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #555;
-    padding: 15px;
-    margin-top: -27px
-    }
-    span.usuario {
-    flex-grow: 1;
-    justify-self: flex-start;
-    color: #EEE;
-    padding-left: 10px;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-.index_buttom > a.vermelho { 
-    text-decoration: none;
-    color: #FFF;
-    font-weight: 300;
-    font-size: 1.3rem;
-    background-color: #2196f3;
-    padding: 2px 20px;
-    margin-right: 10px;
-}
-.index_buttom > a:hover.vermelho { 
-    background-color: red;
+h3{
+          font-size: 2.1rem;
+          margin: 20px
 }
 
+form > div {
+          padding-bottom: 15px;
+}
+
+label, input, button {
+    font-size: 1.5rem;
+}
+button {
+    color: #FFF;
+    background-color: #228b22;
+}
+button.button:hover{
+   transform: scaleX(1.1);
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 </style>
