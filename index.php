@@ -55,12 +55,15 @@ if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional 
     color: #FFF;
     font-weight: 300;
     font-size: 1.3rem;
-    background-color: #2196f3;
+    background-color: #F44336;
     padding: 2px 20px;
     margin-right: 10px;
 }
 .index_buttom > a:hover.vermelho { 
-    background-color: red;
+    background: pink;
+    color: #222;
+    border: solid 1px #222;
 }
+
 
 </style>
