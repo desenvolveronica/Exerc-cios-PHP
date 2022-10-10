@@ -52,7 +52,7 @@ if($_POST['email']){//se existir email
         <h2>Seja bem vindo</h2>
     </header>
 
-    <main class="principal" style="margin-top: 45px">
+    <main class="principal" style="margin-top: -30px">
         <div class="conteudo">
             <h3>ACESSE SUA CONTA</h3>
 
