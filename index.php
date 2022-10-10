@@ -44,6 +44,7 @@ if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional 
     }
     span.usuario {
     flex-grow: 1;
+    justify-self: flex-start;
     color: #EEE;
     font-size: 1.5rem;
     font-weight: 300;

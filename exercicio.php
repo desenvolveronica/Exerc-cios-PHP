@@ -21,10 +21,11 @@ if(!$_SESSION['usuario']){
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
-       
+        <span class="usuario">Usuário: <?= $_SESSION['usuario'] ?></span>
         <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
             class="verde">Sem formatação</a>
         <a href="index.php">Voltar</a>
+        <a href="logout.php" class="vermelho" style="margin-top: 1px">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
@@ -38,3 +39,18 @@ if(!$_SESSION['usuario']){
     </footer>
 </body>
 </html>
+
+<style>
+span.usuario {
+    color: #EEE;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 6px 25px 0px 20px
+}
+.navegacao .vermelho:hover{
+    background: pink;
+    color: #222;
+    border: solid 1px #222;
+}
+</style>
