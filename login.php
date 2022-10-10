@@ -54,28 +54,27 @@ if($_POST['email']){
 
     <main class="principal" style="margin-top: 45px">
         <div class="conteudo">
-           <h3>ACESSE SUA CONTA</h3>
+            <h3>ACESSE SUA CONTA</h3>
 
-           <?php  if($_SESSION['erros']): ?>
-                <div class="erros">
-                    <?php foreach($_SESSION['erros'] as $erro):  ?>
-                        <p><?= $erro ?></p>
-                    <?php endforeach ?>
-                </div>
-           <?php endif ?>
+            <?php  if($_SESSION['erros']): ?>
+                    <div class="erros">
+                        <?php foreach($_SESSION['erros'] as $erro):  ?>
+                            <p><?= $erro ?></p>
+                        <?php endforeach ?>
+                    </div>
+            <?php endif ?>
 
-           <form action="#" method="post">
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha">
-                </div>
-                <button class="button">Entrar</button>
-           </form>
-
+            <form action="#" method="post">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <button class="button">Entrar</button>
+            </form>
         </div>
     </main>
     <footer class="rodape">
