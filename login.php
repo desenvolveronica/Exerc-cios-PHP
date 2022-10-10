@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $_SESSION['erros'] = null;
 
-if($_POST['email']){
+if($_POST['email']){//se existir email
     //array como se fosse banco de dados para login
     $usuarios = [
         [

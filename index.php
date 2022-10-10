@@ -1,6 +1,6 @@
 <?php 
-session_start();
-if(!$_SESSION['usuario']){
+session_start(); //para trabalhar com session precisamos antes de qualquer coisa dar session_start()
+if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional que diz: se no array session $_SESSION não existir posição usuário 
     header('Location: login.php');
 }
 ?>
