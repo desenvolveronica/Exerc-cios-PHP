@@ -18,10 +18,10 @@ if(!$_SESSION['usuario']){
         <h1>Curso PHP</h1>
         <h2>Índice dos Exercícios</h2>
     </header>
-    <nav class="navegacao">
+    <nav class="navegacao" style="margin-top: -6px">
         <div class="index_buttom">
             <span class="usuario">Usuário: <?= $_SESSION['usuario'] ?></span>
-            <a href="logout.php" class="vermelho">Sair</a>
+            <a href="logout.php" class="vermelho" style="margin-top: 1px">Sair</a>
         </div>
     </nav>
     <main class="principal" style="margin-top: 5px">
@@ -39,10 +39,8 @@ if(!$_SESSION['usuario']){
 <style>
     .index_buttom{
     display: flex;
-    align-items: center;
     background-color: #555;
     padding: 15px;
-    margin-top: -7px
     }
     span.usuario {
     flex-grow: 1;
