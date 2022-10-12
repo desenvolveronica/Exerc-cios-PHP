@@ -26,6 +26,10 @@ if($_POST['email']){//se existir email
         if($emailValido && $senhaValida){
             $_SESSION['erros'] = null;
             $_SESSION['usuario'] = $usuario['nome'];
+            //inserção de cookie
+            $exp = time() + 60 * 60 * 24 * 30; //time que é expressada em segundos e para formar 30 dias soma 60s * 60m * 24h * 30 dias
+            //criação do cookie 
+            setcookie('usuario', $usuario['nome'], $exp); //informa name e valor e como 3 parÂmetro a data de expiração
             header('Location: index.php');
         }
     };

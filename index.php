@@ -1,8 +1,6 @@
 <?php 
-session_start(); //para trabalhar com session precisamos antes de qualquer coisa dar session_start()
-if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional que diz: se no array session $_SESSION não existir posição usuário 
-    header('Location: login.php');
-}
+require_once('controller_login.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +17,12 @@ if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional 
         <h2>Índice dos Exercícios</h2>
     </header>
     <nav class="navegacao" style="margin-top: -6px">
-        <div class="index_buttom">
+        <div class="index_button">
             <span class="usuario">Usuário: <?= $_SESSION['usuario'] ?></span>
-            <a href="logout.php" class="vermelho" style="margin-top: 1px">Sair</a>
+            <div  class="button" >
+                <a href="sair.php" class="azul" style="margin-top: 1px">Sair</a>
+                <a href="logout.php" class="vermelho" style="margin-top: 1px">Deslogar</a>
+            </div>
         </div>
     </nav>
     <main class="principal" style="margin-top: 5px">
@@ -37,7 +38,10 @@ if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional 
 </html>
 
 <style>
-    .index_buttom{
+    .button{
+        display: flex;
+    }
+    .index_button{
     display: flex;
     background-color: #555;
     padding: 15px;
@@ -48,9 +52,9 @@ if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional 
     color: #EEE;
     font-size: 1.5rem;
     font-weight: 300;
-    padding-right: 1630px;
+    padding-right: 1510px;
 }
-.index_buttom > a.vermelho { 
+.button > a.vermelho { 
     text-decoration: none;
     color: #FFF;
     font-weight: 300;
@@ -59,7 +63,21 @@ if(!$_SESSION['usuario']){ //como SESSION é um array colocamos uma condicional 
     padding: 2px 20px;
     margin-right: 10px;
 }
-.index_buttom > a:hover.vermelho { 
+.button > a:hover.vermelho { 
+    background: pink;
+    color: #222;
+    border: solid 1px #222;
+}
+.button > a.azul { 
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: #2196f3;
+    padding: 2px 20px;
+    margin-right: 10px;
+}
+.button > a:hover.azul { 
     background: pink;
     color: #222;
     border: solid 1px #222;

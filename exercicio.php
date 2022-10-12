@@ -1,8 +1,6 @@
 <?php 
-session_start();
-if(!$_SESSION['usuario']){
-    header('Location: login.php');
-}
+require_once('controller_login.php');
+
 ?>
 
 
@@ -25,7 +23,7 @@ if(!$_SESSION['usuario']){
         <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
             class="verde">Sem formatação</a>
         <a href="index.php">Voltar</a>
-        <a href="logout.php" class="vermelho" style="margin-top: 1px">Sair</a>
+        <a href="sair.php" class="vermelho" style="margin-top: 1px">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
